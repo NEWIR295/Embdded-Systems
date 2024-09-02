@@ -1,2 +1,2 @@
 # Embdded-Systems
-Embdded Systems Repo Dealing with AVR Atmega32
+Embdded Systems Repo For Arduino ,AVR Atmega32 Projects
