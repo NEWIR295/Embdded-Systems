@@ -1,0 +1,518 @@
+16:06:21 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     358 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:06:40 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     358 bytes (1.1% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:42:05 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:12:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../src/main.c
+ 
+Building target: TIMER-CH1_ET_CTC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TIMER-CH1_ET_CTC.map -mmcu=atmega32 -o "TIMER-CH1_ET_CTC.elf"  ./src/main.o   
+Finished building target: TIMER-CH1_ET_CTC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TIMER-CH1_ET_CTC.elf  >"TIMER-CH1_ET_CTC.lss"
+Finished building: TIMER-CH1_ET_CTC.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex TIMER-CH1_ET_CTC.elf  "TIMER-CH1_ET_CTC.hex"
+Finished building: TIMER-CH1_ET_CTC.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     326 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:42:42 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:12:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../src/main.c
+ 
+Building target: TIMER-CH1_ET_CTC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TIMER-CH1_ET_CTC.map -mmcu=atmega32 -o "TIMER-CH1_ET_CTC.elf"  ./src/main.o   
+Finished building target: TIMER-CH1_ET_CTC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TIMER-CH1_ET_CTC.elf  >"TIMER-CH1_ET_CTC.lss"
+Finished building: TIMER-CH1_ET_CTC.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex TIMER-CH1_ET_CTC.elf  "TIMER-CH1_ET_CTC.hex"
+Finished building: TIMER-CH1_ET_CTC.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     326 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:42:46 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     326 bytes (1.0% Full)
+(.text + .data + .bootloader)
+
+Data:          3 bytes (0.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:59:48 **** Build of configuration Debug for project I-CH4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I-CH4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     212 bytes (0.6% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+16:59:49 **** Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:12:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../src/main.c
+ 
+Building target: TIMER-CH1_ET_CTC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TIMER-CH1_ET_CTC.map -mmcu=atmega32 -o "TIMER-CH1_ET_CTC.elf"  ./src/main.o   
+Finished building target: TIMER-CH1_ET_CTC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TIMER-CH1_ET_CTC.elf  >"TIMER-CH1_ET_CTC.lss"
+Finished building: TIMER-CH1_ET_CTC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:00:01 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:00:03 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:00:04 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:00:05 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:03:53 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:12:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../src/main.c
+ 
+Building target: TIMER-CH1_ET_CTC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TIMER-CH1_ET_CTC.map -mmcu=atmega32 -o "TIMER-CH1_ET_CTC.elf"  ./src/main.o   
+Finished building target: TIMER-CH1_ET_CTC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TIMER-CH1_ET_CTC.elf  >"TIMER-CH1_ET_CTC.lss"
+Finished building: TIMER-CH1_ET_CTC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:03:56 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     466 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:05:22 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:12:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../src/main.c
+ 
+Building target: TIMER-CH1_ET_CTC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TIMER-CH1_ET_CTC.map -mmcu=atmega32 -o "TIMER-CH1_ET_CTC.elf"  ./src/main.o   
+Finished building target: TIMER-CH1_ET_CTC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TIMER-CH1_ET_CTC.elf  >"TIMER-CH1_ET_CTC.lss"
+Finished building: TIMER-CH1_ET_CTC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     456 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:05:24 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     456 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:06:43 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Building target: TIMER-CH1_ET_CTC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,TIMER-CH1_ET_CTC.map -mmcu=atmega32 -o "TIMER-CH1_ET_CTC.elf"  ./src/main.o   
+Finished building target: TIMER-CH1_ET_CTC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S TIMER-CH1_ET_CTC.elf  >"TIMER-CH1_ET_CTC.lss"
+Finished building: TIMER-CH1_ET_CTC.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex TIMER-CH1_ET_CTC.elf  "TIMER-CH1_ET_CTC.hex"
+Finished building: TIMER-CH1_ET_CTC.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     456 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:00 **** Clean-only build of configuration Debug for project I-CH3 ****
+make clean 
+rm -rf  I-CH3.hex  ./src/main.o  sizedummy  I-CH3.lss  ./src/main.d  I-CH3.elf
+ 
+21:37:01 **** Build of configuration Debug for project I-CH3 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/main.c
+ 
+Building target: I-CH3.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I-CH3.map -mmcu=atmega32 -o "I-CH3.elf"  ./src/main.o   
+Finished building target: I-CH3.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I-CH3.elf  >"I-CH3.lss"
+Finished building: I-CH3.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex I-CH3.elf  "I-CH3.hex"
+Finished building: I-CH3.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I-CH3.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3628 bytes (11.1% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:07 **** Incremental Build of configuration Debug for project I-CH4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I-CH4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     212 bytes (0.6% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:08 **** Build of configuration Debug for project MOTORS-EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:9:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+In file included from ../src/main.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:22: error: redefinition of 'button1LastState'
+../src/main.c:20: error: previous definition of 'button1LastState' was here
+../src/main.c:23: error: redefinition of 'button2State'
+../src/main.c:21: error: previous definition of 'button2State' was here
+../src/main.c:24: warning: unused variable 'button2LastState'
+../src/main.c:23: warning: unused variable 'button2State'
+../src/main.c:22: warning: unused variable 'button1LastState'
+../src/main.c:19: warning: unused variable 'button1State'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:37:10 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     456 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:40 **** Incremental Build of configuration Debug for project MOTORS-EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/main.c
+ 
+Building target: MOTORS-EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,MOTORS-EX1.map -mmcu=atmega32 -o "MOTORS-EX1.elf"  ./src/main.o   
+Finished building target: MOTORS-EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S MOTORS-EX1.elf  >"MOTORS-EX1.lss"
+Finished building: MOTORS-EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MOTORS-EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3422 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:37:45 **** Incremental Build of configuration Debug for project MOTORS-EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MOTORS-EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3422 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

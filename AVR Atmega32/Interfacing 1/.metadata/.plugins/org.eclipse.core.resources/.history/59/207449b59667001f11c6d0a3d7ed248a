@@ -1,0 +1,36 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 31, 2024
+ *      Author: Mohamed Newir
+ *      Description: control lrd by timer0 in ctc mode
+ */
+/*std libraries*/
+#include <avr/io.h>
+#include <avr/interrupt.h>
+/*system frequency*/
+#define F_CPU 16000000
+/*global variables*/
+unsigned char tickG = 0;
+unsigned char compValue = 250;
+/*ISR function*/
+
+/*timer 0 init*/
+void timer0compMode(void){
+	TCCR0 = (1<<FOC0) | (1<<WGM01) | (1<<CS02) | (1<<CS00);
+	TCNT0 = 0;
+	OCR0 = compValue;
+	TIMSK |= (1<<OCIE0);
+	SREG |= (1<<7);
+}
+/*main function*/
+int main(void){
+	/*application initialization*/
+	DDRC |=(1<<PC0);
+	PORTC &=~(1<<PC0);
+	timer0compMode();
+	while(1){
+
+	}
+	return 0;
+}

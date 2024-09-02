@@ -1,0 +1,20 @@
+21:37:45 **** Incremental Build of configuration Debug for project MOTORS-EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 MOTORS-EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3422 bytes (10.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:37:45 Build Finished. 0 errors, 0 warnings. (took 698ms)
+

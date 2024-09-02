@@ -1,0 +1,20 @@
+15:12:25 **** Incremental Build of configuration Debug for project I-EX3 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I-EX3.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     302 bytes (0.9% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+15:12:26 Build Finished. 0 errors, 0 warnings. (took 678ms)
+

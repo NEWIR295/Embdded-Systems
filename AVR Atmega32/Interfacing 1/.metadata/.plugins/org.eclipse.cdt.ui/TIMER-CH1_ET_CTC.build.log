@@ -1,0 +1,20 @@
+21:37:10 **** Incremental Build of configuration Debug for project TIMER-CH1_ET_CTC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 TIMER-CH1_ET_CTC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     456 bytes (1.4% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:37:10 Build Finished. 0 errors, 0 warnings. (took 838ms)
+

@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 16, 2024
+ *      Author: Mohamed Newir
+ *      project description: control two leds using push buttons
+ */
+/*define system frequency*/
+#define F_CPU 1000000UL
+/*std libraries*/
+#include <avr/io.h>
+#include <util/delay.h>
+
+
+
+

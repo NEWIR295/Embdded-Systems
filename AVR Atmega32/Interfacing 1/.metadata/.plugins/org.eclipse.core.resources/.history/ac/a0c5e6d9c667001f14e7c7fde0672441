@@ -1,0 +1,21 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 31, 2024
+ *      Author: Mohamed Newir
+ *      project description: control dc motor using L23 CHIP
+ */
+/*system frequency*/
+#define F_CPU 1000000UL
+/*std libraries*/
+#include <avr/io.h>
+#include <util/delay.h>
+
+/*main function*/
+int main(void){
+	ddra
+	while(1){
+
+	}
+	return 0;
+}

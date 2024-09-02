@@ -1,0 +1,33 @@
+18:43:50 **** Incremental Build of configuration Debug for project INT1-EX2.0 ****
+make all 
+Building target: INT1-EX2.0.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,INT1-EX2.0.map -mmcu=atmega32 -o "INT1-EX2.0.elf"  ./src/main.o   
+Finished building target: INT1-EX2.0.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S INT1-EX2.0.elf  >"INT1-EX2.0.lss"
+Finished building: INT1-EX2.0.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex INT1-EX2.0.elf  "INT1-EX2.0.hex"
+Finished building: INT1-EX2.0.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 INT1-EX2.0.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    4514 bytes (13.8% Full)
+(.text + .data + .bootloader)
+
+Data:          9 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:43:54 Build Finished. 0 errors, 0 warnings. (took 3s.895ms)
+

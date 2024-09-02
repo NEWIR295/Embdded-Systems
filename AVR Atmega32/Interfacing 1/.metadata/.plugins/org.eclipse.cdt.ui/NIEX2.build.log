@@ -1,0 +1,20 @@
+22:56:26 **** Incremental Build of configuration Debug for project NIEX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 NIEX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3512 bytes (10.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+22:56:28 Build Finished. 0 errors, 0 warnings. (took 1s.437ms)
+

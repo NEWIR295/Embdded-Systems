@@ -1,0 +1,20 @@
+21:37:07 **** Incremental Build of configuration Debug for project I-CH4 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I-CH4.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:     212 bytes (0.6% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:37:07 Build Finished. 0 errors, 0 warnings. (took 631ms)
+

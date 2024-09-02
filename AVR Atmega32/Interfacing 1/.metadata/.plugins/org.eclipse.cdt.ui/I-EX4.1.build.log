@@ -1,0 +1,33 @@
+18:53:21 **** Incremental Build of configuration Debug for project I-EX4.1 ****
+make all 
+Building target: I-EX4.1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,I-EX4.1.map -mmcu=atmega32 -o "I-EX4.1.elf"  ./src/main.o   
+Finished building target: I-EX4.1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S I-EX4.1.elf  >"I-EX4.1.lss"
+Finished building: I-EX4.1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex I-EX4.1.elf  "I-EX4.1.hex"
+Finished building: I-EX4.1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 I-EX4.1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    3750 bytes (11.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+18:53:22 Build Finished. 0 errors, 0 warnings. (took 1s.656ms)
+

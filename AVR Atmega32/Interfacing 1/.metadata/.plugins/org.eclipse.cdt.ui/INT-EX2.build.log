@@ -1,0 +1,19 @@
+19:25:49 **** Incremental Build of configuration Debug for project INT-EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from c:/winavr-20100110/lib/gcc/../../avr/include/inttypes.h:37,
+                 from c:/winavr-20100110/lib/gcc/../../avr/include/avr/sfr_defs.h:126,
+                 from c:/winavr-20100110/lib/gcc/../../avr/include/avr/io.h:99,
+                 from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/stdint.h:121: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'typedef'
+c:/winavr-20100110/lib/gcc/../../avr/include/stdint.h:159: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int_least8_t'
+c:/winavr-20100110/lib/gcc/../../avr/include/stdint.h:213: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'int_fast8_t'
+In file included from ../src/main.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+19:25:50 Build Failed. 4 errors, 1 warnings. (took 693ms)
+

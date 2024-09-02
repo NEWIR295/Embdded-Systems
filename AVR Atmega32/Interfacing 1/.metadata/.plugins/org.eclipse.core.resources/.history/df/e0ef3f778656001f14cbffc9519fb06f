@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Aug 9, 2024
+ *      Author: Mohamed Newir
+ *      challenge1: control LED using Push Buttom
+ */
+/*AVR STD Libraries*/
+#include <avr/io.h>
+#include <util/delay.h>
+/*main function*/
+int main(void){
+	/*initialization of pin direction*/
+	DDRC |=(1<<2); /*set LED PIN 1 to be output*/
+
+	while(1){
+		PORTC |=(1<<2);
+	}
+	return 0;
+}
