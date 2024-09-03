@@ -14,11 +14,11 @@
 
 ## Project Overview
 This project aims to set a temperature range and maintain the current temperature within that range by implementing the following:
-- Designed a signal conditioning circuit using Op-Amps for an NTC Thermistor
-- Implemented the circuit to measure temperature using a microcontroller
-- Integrated a Bluetooth module for user interaction
-- Programmed the microcontroller to maintain temperature within a user-set range
-- Incorporated both a heater and cooler controlled by the microcontroller
+- Design a signal conditioning circuit using Op-Amps for an NTC Thermistor
+- Implement the circuit to measure temperature using a microcontroller
+- Integrate a Bluetooth module for user interaction
+- Program the microcontroller to maintain temperature within a user-set range
+- Incorporat both a heater and cooler controlled by the microcontroller
 
 ### Key Components
 - **NTC 10 KΩ Thermistor:** Used to measure the current temperature.
