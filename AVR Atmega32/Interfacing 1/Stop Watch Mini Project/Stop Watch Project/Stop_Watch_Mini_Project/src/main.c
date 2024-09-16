@@ -4,7 +4,7 @@
  *  Created on: Sep 14, 2024
  *      Author: Mohamed Newir
  *      Project Description: Stopwatch with Dual Mode (Increment and Countdown)
- *     						 Using ATmega32 and Seven-Segment Display.
+ *     		      Using ATmega32 and Seven-Segment Display.
  *
  */
 
