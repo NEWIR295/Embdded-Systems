@@ -111,11 +111,12 @@ The display is handled using six multiplexed seven-segment displays, and several
 4. **Time Adjustment**: In Pause Mode, use the Hour, Minute, and Second adjustment buttons to set the desired countdown time.
 5. **Reset**: Press the **Reset Button** (PD2) to reset the stopwatch.
 
+- You could use proteus simulation provided in stop watch project simulation file to test the project.
 ---
 
 ## Operation Flow
 
-1. **Countd up Mode**:
+1. **Count up Mode**:
    - The time starts from `00:00:00` and increments continuously.
    - Use the **Pause Button** to pause and **Resume Button** to continue counting.
 
@@ -150,4 +151,4 @@ The display is handled using six multiplexed seven-segment displays, and several
 
 ## Contributors
 
-- **Mohamed Newir** – Original Author
+- **Mohamed Newir** 
