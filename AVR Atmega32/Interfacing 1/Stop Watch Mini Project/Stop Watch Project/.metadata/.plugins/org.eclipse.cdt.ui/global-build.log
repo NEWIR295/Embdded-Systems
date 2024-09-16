@@ -1,0 +1,84 @@
+14:16:31 **** Build of configuration Debug for project Stop_Watch_Mini_Project ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:17:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../src/main.c
+ 
+Building target: Stop_Watch_Mini_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Stop_Watch_Mini_Project.map -mmcu=atmega32 -o "Stop_Watch_Mini_Project.elf"  ./src/main.o   
+Finished building target: Stop_Watch_Mini_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Stop_Watch_Mini_Project.elf  >"Stop_Watch_Mini_Project.lss"
+Finished building: Stop_Watch_Mini_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Stop_Watch_Mini_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7716 bytes (23.5% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:16:39 **** Incremental Build of configuration Debug for project Stop_Watch_Mini_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Stop_Watch_Mini_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7716 bytes (23.5% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:16:40 **** Incremental Build of configuration Debug for project Stop_Watch_Mini_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Stop_Watch_Mini_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7716 bytes (23.5% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:16:43 **** Incremental Build of configuration Debug for project Stop_Watch_Mini_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Stop_Watch_Mini_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7716 bytes (23.5% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
