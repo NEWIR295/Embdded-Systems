@@ -39,7 +39,8 @@ static unsigned char HoursIncButtonState = ZERO;
 void buttons(void){
 	/* reset milliseconds */
 	milliseconds = ZERO;
-	if((toggleButtonState == ZERO) && (lastToggleButtonState != ZERO))
+
+	if(BUTTON_CHECK(toggleButtonState,lastToggleButtonState))
 	{
 		countUP_DOWN = !countUP_DOWN;
 		if(countUP_DOWN){
@@ -59,7 +60,7 @@ void buttons(void){
 	_delay_ms(DEPOUNCING_DELAY);
 
 	/* seconds decrement*/
-	if((SecDecButtonState == ZERO) && (lastSecDecButtonState != ZERO)){
+	if(BUTTON_CHECK(SecDecButtonState,lastSecDecButtonState)){
 		if(seconds>ZERO){
 			seconds--;
 		}
@@ -68,7 +69,7 @@ void buttons(void){
 	_delay_ms(DEPOUNCING_DELAY);
 
 	/* seconds increments*/
-	if((SecIncButtonState == ZERO) && (lastSecIncButtonState != ZERO)){
+	if(BUTTON_CHECK(SecIncButtonState,lastSecIncButtonState)){
 		seconds++;
 		if(seconds >MAX_SECONDS){
 			/* reset seconds */
@@ -87,9 +88,8 @@ void buttons(void){
 	}
 	lastSecIncButtonState = SecIncButtonState;
 	_delay_ms(DEPOUNCING_DELAY);
-
 	/* minutes decrement */
-	if((MinDecButtonState == ZERO) && (lastMinDecButtonState != ZERO)){
+	if(BUTTON_CHECK(MinDecButtonState,lastMinDecButtonState)){
 		if(minutes>ZERO){
 			minutes--;
 		}
@@ -97,9 +97,8 @@ void buttons(void){
 	}
 	lastMinDecButtonState = MinDecButtonState;
 	_delay_ms(DEPOUNCING_DELAY);
-
 	/* minutes increment */
-	if((MinIncButtonState == ZERO) && (lastMinIncButtonState != ZERO)){
+	if(BUTTON_CHECK(MinIncButtonState,lastMinIncButtonState)){
 		minutes++;
 		/* reset minutes */
 		if(minutes >MAX_MINUTES){
@@ -113,18 +112,16 @@ void buttons(void){
 	}
 	lastMinIncButtonState = MinIncButtonState;
 	_delay_ms(DEPOUNCING_DELAY);
-
 	/* hours decrement */
-	if((HoursDecButtonState == ZERO) && (lastHoursDecButtonState != ZERO)){
+	if(BUTTON_CHECK(HoursDecButtonState,lastHoursDecButtonState)){
 		if(hours>ZERO){
 			hours--;
 		}
 	}
 	lastHoursDecButtonState = HoursDecButtonState;
 	_delay_ms(DEPOUNCING_DELAY);
-
 	/* hours increment */
-	if((HoursIncButtonState == ZERO) && (lastHoursIncButtonState != ZERO)){
+	if(BUTTON_CHECK(HoursIncButtonState,lastHoursIncButtonState)){
 		hours++;
 		/* reset stop watch */
 		if(hours > MAX_HOURS){
