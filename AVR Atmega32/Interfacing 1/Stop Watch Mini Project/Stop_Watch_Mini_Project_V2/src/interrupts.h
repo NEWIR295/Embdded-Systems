@@ -16,5 +16,6 @@
 
 extern unsigned int time[SEVEN_SEGMENT_NUMBERS];
 void interrupt_init(void);
+void reset(void);
 
 #endif /* INTERRUPTS_H_ */
