@@ -16,11 +16,11 @@
 /* Toggle a certain bit in the register */
 #define TOGGLE_BIT(REG,BIT) ((REG)^=(1<<(BIT)))
 /* Rotate right register value with certain numbers of rotates */
-#define ROR(REG,NUM) ((REG) = ((REG)>>(NUM)) | ((REG)<<(8-(NUM)))
+#define ROR(REG,NUM) ((REG) = ((REG)>>(NUM)) | ((REG)<<(8-(NUM))))
 /* Rotate Left register value with certain numbers of rotates */
-#define ROL(REG,NUM) ((REG) = ((REG)<<(NUM)) | ((REG)>>(8-(NUM)))
+#define ROL(REG,NUM) ((REG) = ((REG)<<(NUM)) | ((REG)>>(8-(NUM))))
 /* Check if a certain bit in the register is set */
-#define BIT_IS_SIT(REG,BIT) ((REG)&(1<<BIT))
+#define BIT_IS_SET(REG,BIT) ((REG)&(1<<BIT))
 /* Check if a certain bit in the register is cleared */
 #define BIT_IS_CLEAR(REG,BIT) (!((REG)&(1<<BIT)))
 

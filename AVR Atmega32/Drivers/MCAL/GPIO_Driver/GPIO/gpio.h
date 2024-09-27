@@ -18,11 +18,13 @@
 #define NUM_OF_PORTS 4
 #define NUM_OF_PINS_PER_PORT 8
 
+/* PORT ID*/
 #define PORTA_ID 0
 #define PORTB_ID 1
 #define PORTC_ID 2
 #define PORTD_ID 3
 
+/* PIN ID */
 #define PIN0_ID 0
 #define PIN1_ID 1
 #define PIN2_ID 2
@@ -46,12 +48,58 @@ typedef enum{
 
 /* GPIO function prototype */
 
+/*
+ * Description:
+ * setup the direction of the required pin  either input or output
+ * check if the input port and pin ID isn't defined
+ * if the pin direction is output the  pin will be output
+ * if the pin direction is input the  pin will be input
+ */
 void GPIO_setupPinDirection(uint8 port_num, uint8 pin_num, GPIO_PinDirectionType direction);
-void GPIO_writePin(uint8 port_num, uint8 pin_num, uint8 value);
-uint8 GPIO_readPin(uint8 port_num, uint8 pin_num);
-void GPIO_setupPortDirection(uint8 port_num, GPIO_PortDirectionType direction);
-void GPIO_writePort(uint8 port_num, uint8 value);
-uint8 GPIO_readPort(uint8 port_num);
 
+/*
+ * Description:
+ * write the value on required pin
+ * check if the input port and pin ID isn't defined
+ * if the pin is output the value will be written either LOW or HIGH
+ * if the pin is input it will either activate/deactivate internal
+ *  pull-up register
+ */
+void GPIO_writePin(uint8 port_num, uint8 pin_num, uint8 value);
+
+/*
+ * Description:
+ * Read the value on required pin and return its value
+ * check if the input port and pin ID isn't defined it will return 0
+ */
+uint8 GPIO_readPin(uint8 port_num, uint8 pin_num);
+
+/*
+ * Description:
+ * setup the direction of the required port  either input or output
+ * check if the input port ID isn't defined
+ * if the port direction is output the entire pins will be output
+ * if the port direction is input the entire pins will be input
+ */
+void GPIO_setupPortDirection(uint8 port_num, GPIO_PortDirectionType direction);
+
+
+/*
+ * Description:
+ * write the value on required port
+ * check if the input port ID isn't defined
+ * if the pin is output the value will be written
+ * if the pin is input it will either activate/deactivate internal
+ *  pull-up register
+ */
+void GPIO_writePort(uint8 port_num, uint8 value);
+
+
+/*
+ * Description:
+ * Read the value on required port and return its value
+ * check if the input port ID isn't defined it will return 0
+ */
+uint8 GPIO_readPort(uint8 port_num);
 
 #endif /* GPIO_GPIO_H_ */
