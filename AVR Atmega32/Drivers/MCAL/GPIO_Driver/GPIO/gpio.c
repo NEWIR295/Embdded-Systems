@@ -127,50 +127,6 @@ uint8 GPIO_readPin(uint8 port_num, uint8 pin_num) {
 			return BIT_IS_SET(PIND, pin_num) ? HIGH : LOW;
 			break;
 		}
-/*
-		switch(port_num)
-				{
-				case PORTA_ID:
-					if(BIT_IS_SET(PINA,pin_num))
-					{
-						return HIGH;
-					}
-					else
-					{
-						return LOW;
-					}
-					break;
-				case PORTB_ID:
-					if(BIT_IS_SET(PINB,pin_num))
-					{
-						return HIGH;
-					}
-					else
-					{
-						return LOW;
-					}
-					break;
-				case PORTC_ID:
-					if(BIT_IS_SET(PINC,pin_num))
-					{
-						return HIGH;
-					}
-					else
-					{
-						return LOW;
-					}
-					break;
-				case PORTD_ID:
-					if(BIT_IS_SET(PIND,pin_num))
-					{
-						return HIGH;
-					}
-					else
-					{
-						return  LOW;
-					}
-					break;
-				}*/
 
 	}
 
