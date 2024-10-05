@@ -1,9 +1,8 @@
 /*
- * 	File Name: adc.c
+ * adc.c
  *
- *  	Created on: Sep 28, 2024
- *      Author: Mohamed Newir
- *	Description: ADC Source File 
+ *  Created on: Sep 28, 2024
+ *      Author: ma479
  */
 
 /* used libraries */
@@ -14,10 +13,10 @@
 /* function responsible to init ADC */
 void ADC_init(void){
 	/* CHOOSe 5v as reference voltage */
-	ADMUX = (1<<REFS0) ;
+	ADMUX = 0 ;
 	/* ADEN -> enable ADC
 	 * ADPS0:2 choose ADC clock */
-	ADCSRA = (1<<ADEN) |  (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);
+	ADCSRA = (1<<ADEN) | (1<<ADPS1) | (1<<ADPS0);
 }
 /* function responsible to read ADC channel */
 uint16 ADC_readChannel(uint8 channel_num){

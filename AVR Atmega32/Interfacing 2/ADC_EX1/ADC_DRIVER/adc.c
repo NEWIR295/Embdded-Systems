@@ -1,9 +1,8 @@
 /*
- * 	File Name: adc.c
+ * adc.c
  *
- *  	Created on: Sep 28, 2024
- *      Author: Mohamed Newir
- *	Description: ADC Source File 
+ *  Created on: Sep 28, 2024
+ *      Author: ma479
  */
 
 /* used libraries */

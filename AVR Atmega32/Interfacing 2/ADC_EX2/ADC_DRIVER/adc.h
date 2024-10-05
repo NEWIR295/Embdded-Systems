@@ -1,9 +1,8 @@
 /*
- * 	File Name: adc.c
+ * adc.h
  *
- *  	Created on: Sep 28, 2024
- *      Author: Mohamed Newir
- *	Description: ADC Header File 
+ *  Created on: Sep 28, 2024
+ *      Author: ma479
  */
 
 #ifndef ADC_H_
