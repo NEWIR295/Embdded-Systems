@@ -11,6 +11,7 @@
 
 #include "../macros/std_types.h"
 
+#define LCD_DATA_BITS_MODE 4
 /* LCD PORTS/PINS ID*/
 #define LCD_RS_PORT_ID PORTD_ID
 #define LCD_RS_PIN_ID PIN4_ID
@@ -19,6 +20,15 @@
 #define LCD_E_PIN_ID PIN5_ID
 
 #define LCD_DATA_PORT PORTC_ID
+
+#if (LCD_DATA_BITS_MODE == 4)
+
+#define LCD_DB4_PIN_ID	PIN3_ID
+#define LCD_DB5_PIN_ID  PIN4_ID
+#define LCD_DB6_PIN_ID  PIN5_ID
+#define LCD_DB7_PIN_ID	PIN6_ID
+
+#endif
 
 /* LCD COMMANDS */
 #define LCD_CLEAR_COMMAND 0x01
@@ -30,12 +40,15 @@
 #define LCD_TWO_LINES_8_BITS_MODE 0x38
 #define LCD_TWO_LINES_4_BITS_MODE 0x28
 
+#define LCD_TWO_LINES_4_BITS_MODE_INT1 0x33
+#define LCD_TWO_LINES_4_BITS_MODE_INT2 0x32
+
 /* lcd function prototypes */
 
 /*
  * function purpose is to initialize LCD: pin direction
  *  , setup lcd data mode 4-bits or 8-bits
-*/
+ */
 void LCD_init(void);
 
 /*
@@ -67,7 +80,7 @@ void LCD_displayStringRowColumn(uint8 row,uint8 col,const uint8 *str);
 /*
  * function purpose is to display integers on screen
  */
-void LCD_integerToString(uint8 data);
+void LCD_integerToString(uint16 data);
 
 /*
  * function purpose is send command to clear screen

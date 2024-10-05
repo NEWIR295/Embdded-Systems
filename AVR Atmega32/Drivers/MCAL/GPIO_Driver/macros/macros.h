@@ -24,4 +24,6 @@
 /* Check if a certain bit in the register is cleared */
 #define BIT_IS_CLEAR(REG,BIT) (!((REG)&(1<<BIT)))
 
+#define GET_BIT(REG,BIT) ( ( REG & (1<<BIT) ) >> BIT )
+
 #endif /* MACROS_MACROS_H_ */
