@@ -1,0 +1,17 @@
+/*
+ * 		File Name: motor.h
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Motor Driver Header file
+ */
+
+#ifndef MOTOR_H_
+#define MOTOR_H_
+
+/* user defined data types library */
+#include "../macros/std_types.h"
+
+
+
+#endif /* MOTOR_H_ */

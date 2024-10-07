@@ -1,0 +1,26 @@
+/*
+ * 		File Name: motor.c
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Motor Driver Source file
+ */
+/* used libraries */
+#include "../GPIO/gpio.h"
+#include "../PWM_DRIVER/pwm.h"
+#include "motor.h"
+/*
+ * Initializes the DC motor by setting the direction for the motor pins and stopping the
+ * motor at the beginning.
+ */
+void DcMotor_Init(void){
+
+}
+
+/*
+ * Controls the motor's state (Clockwise/Anti-Clockwise/Stop) and adjusts the speed based
+ * on the input duty cycle.
+ */
+void DcMotor_Rotate(motorState state, uint8 speed){
+
+}

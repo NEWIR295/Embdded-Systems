@@ -1,0 +1,16 @@
+/*
+ * 		File Name: ldr_sensor.h
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: LDR Sensor Driver Header File
+ */
+
+#ifndef LDR_SENSOR_H_
+#define LDR_SENSOR_H_
+
+/* user defined data type */
+#include "../macros/std_types.h"
+#define LDR_SENSOR_MAX_VOLT_VALUE 2.56
+
+#endif /* LDR_SENSOR_H_ */

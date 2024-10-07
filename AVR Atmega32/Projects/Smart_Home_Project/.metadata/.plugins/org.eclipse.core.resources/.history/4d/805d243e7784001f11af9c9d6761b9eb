@@ -1,0 +1,24 @@
+/*
+ * 		File Name: flame.c
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Flame Sensor Driver Source File
+ */
+/* used libraries */
+#include "../GPIO/gpio.h"
+#include "flame_sensor.h"
+
+/*
+ * Initializes the flame sensor pin direction.
+ */
+void FlameSensor_init(void){
+
+}
+
+/*
+ * Reads the value from the flame sensor and returns it.
+ */
+uint8 FlameSensor_getValue(void){
+
+}

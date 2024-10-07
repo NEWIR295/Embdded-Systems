@@ -1,0 +1,24 @@
+/*
+ * led.c
+ *
+ *  Created on: Oct 7, 2024
+ *      Author: ma479
+ */
+/* used libraries */
+#include "../GPIO/gpio.h"
+#include "led.h"
+/*
+ * Initializes all Leds (red, green, blue) pins direction.
+ * Turn off all the Leds
+ */
+void LEDS_init(void);
+
+/*
+ * Turns on the specified LED.
+ */
+void LED_on(uint8 id);
+
+/*
+ * Turns off the specified LED.
+ */
+void LED_off(uint8 id);

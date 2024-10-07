@@ -1,0 +1,32 @@
+/*
+ * 		File Name: led.h
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: LED Driver Header File
+ */
+
+#ifndef LED_H_
+#define LED_H_
+
+
+/* user defined data types library */
+#include "../macros/std_types.h"
+
+/* LED Connection Logic */
+#define POSITIVE_LOGIC TRUE
+#define NEGATIVE_LOGIC FALSE
+
+#define LED_MODE POSITIVE_LOGIC
+
+/* Red LED port/pin ID */
+#define RED_LED_PORT PORTB_ID
+#define RED_LED_pin
+/* Green LED port/pin ID */
+#define GREEN_LED_PORT PORTB_ID
+#define GREEN_LED_pin
+/* Blue LED port/pin ID */
+#define BLUE_LED_PORT PORTB_ID
+#define BLUE_LED_pin PIN
+
+#endif /* LED_H_ */

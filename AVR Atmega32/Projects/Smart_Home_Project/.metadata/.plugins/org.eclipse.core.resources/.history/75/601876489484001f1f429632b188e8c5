@@ -1,0 +1,48 @@
+/*
+ * 		File Name: main.c
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Smart Home Application Source File
+ */
+
+/* System Frequency */
+#define F_CPU 16000000
+
+/* used libraries*/
+#include "../BUZZER_DRIVER/buzzer.h"
+#include "../FLAME_SENSOR_DRIVER/flame_sensor.h"
+#include "../LDR_SENSOR_DRIVER/ldr_sensor.h"
+#include "../LED_DRIVER/led.h"
+#include "../MOTOR_DRIVER/motor.h"
+#include "../LCD_DRIVER/lcd.h"
+#include "../LM35_Driver/lm35.h"
+#include "../ADC_DRIVER/adc.h"
+/* main function */
+int main(void){
+
+	/* Application initialization */
+
+	LCD_init();
+	Buzzer_init();
+	FlameSensor_init();
+	LEDS_init();
+	DcMotor_Init();
+	ADC_init();
+
+	while(1){
+
+		/* Application Code */
+
+		uint8 fireDetected = FlameSensor_getValue();
+
+		if(fireDetected != FIRE_DETECTED){
+
+		}
+		else{
+
+		}
+
+	}
+	return 0;
+}

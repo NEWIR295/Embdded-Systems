@@ -1,0 +1,173 @@
+/*
+ * 		File Name: main.c
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Smart Home Application Source File
+ */
+
+/* System Frequency */
+#define F_CPU 16000000UL
+
+/* used libraries*/
+#include "../BUZZER_DRIVER/buzzer.h"
+#include "../FLAME_SENSOR_DRIVER/flame_sensor.h"
+#include "../LDR_SENSOR_DRIVER/ldr_sensor.h"
+#include "../LED_DRIVER/led.h"
+#include "../MOTOR_DRIVER/motor.h"
+#include "../LCD_DRIVER/lcd.h"
+#include "../LM35_Driver/lm35.h"
+#include "../ADC_DRIVER/adc.h"
+
+/* main function */
+int main(void){
+
+	/* Application initialization */
+
+	LCD_init();
+	Buzzer_init();
+	FlameSensor_init();
+	LEDS_init();
+	DcMotor_Init();
+	ADC_init();
+
+	/* Clear Screen at Start */
+	LCD_clearScreen();
+
+	motorState state = STOP ;
+
+	while(1){
+
+		/* Application Code */
+
+
+		/* read sensors data */
+		uint8 fireDetected = FlameSensor_getValue();
+		uint16 LDR_reading = LDR_getLightIntensity();
+		uint8 LM35_reading = LM35_getReading();
+
+		if(fireDetected != FIRE_DETECTED){
+
+			/*in case there is no fire*/
+
+			/* insure that buzzer is deactivated */
+			Buzzer_off();
+
+			/* control light using the LDR */
+			if(LDR_reading <= 15){
+
+				/* open 3 LEDs */
+				LED_on(RED_LED_ID);
+				LED_on(BLUE_LED_ID);
+				LED_on(GREEN_LED_ID);
+
+			}
+			else if( (LDR_reading >= 16) && (LDR_reading <= 50) ){
+
+				/* open RED & GREEN LEDs only */
+				LED_on(RED_LED_ID);
+				LED_on(GREEN_LED_ID);
+				/* ensure that blue LED is closed */
+				LED_off(BLUE_LED_ID);
+
+			}
+			else if( (LDR_reading >= 51) && (LDR_reading <= 70) ){
+
+				/* open RED LED only */
+				LED_on(RED_LED_ID);
+				/* ensure that blue & green LED is closed */
+				LED_off(BLUE_LED_ID);
+				LED_off(GREEN_LED_ID);
+
+			}
+			else if( LDR_reading >70 ){
+
+				/* close all LEDs */
+				LED_off(BLUE_LED_ID);
+				LED_off(GREEN_LED_ID);
+				LED_off(RED_LED_ID);
+
+			}
+
+
+			/* control fan speed according to LM35 reading value */
+			if( LM35_reading >= 40){
+
+				/* rotate motor Clockwise directation at 100% speed */
+				DcMotor_Rotate(CW,100);
+				state = CW;
+
+			}
+			else if( ( LM35_reading >= 35 ) && (LM35_reading <40) ){
+
+				/* rotate motor Clockwise directation at 75% speed */
+				DcMotor_Rotate(CW,75);
+				state = CW;
+
+			}
+			else if( ( LM35_reading >= 30 ) && (LM35_reading <35) ){
+
+				/* rotate motor Clockwise directation at 50% speed */
+				DcMotor_Rotate(CW,50);
+				state = CW;
+
+			}
+			else if( ( LM35_reading >= 25 ) && (LM35_reading <30) ){
+
+				/* rotate motor Clockwise directation at 25% speed */
+				DcMotor_Rotate(CW,25);
+				state = CW;
+
+			}
+			else if( LM35_reading <25 ){
+
+				/* stop motor */
+				DcMotor_Rotate(STOP,0);
+				state = STOP;
+			}
+
+			/* Show data on the LCD */
+
+			/* Show Fan State*/
+			if(state == CCW || state == CW ){
+
+				LCD_displayStringRowColumn(0,0,"      FAN ON     ");
+
+			}
+			else{
+
+				LCD_displayStringRowColumn(0,0,"      FAN OFF    ");
+
+			}
+
+			/* Show Temperature & LDR data on LCD */
+			LCD_displayStringRowColumn(1,0,"Temp=  C LDR=   %");
+			if(LDR_reading > 99){
+				LCD_moveCursor(1,6);
+				LCD_integerToString(LDR_reading);
+			}
+			else{
+				LCD_moveCursor(1,6);
+				LCD_integerToString(LDR_reading);
+				LCD_displayString(" ");
+			}
+			LCD_moveCursor(1,6);
+			LCD_integerToString(LM35_reading);
+		}
+		else{
+
+			/* in case fire detected
+			 * activate buzzer
+			 * show alert message on the LCD
+			 */
+			Buzzer_on();
+			LCD_displayStringRowColumn(0,0,"Critical Alert !");
+			LCD_displayStringRowColumn(1,0,"                ");
+
+		}
+
+	}
+
+	return 0;
+
+}

@@ -1,0 +1,18 @@
+/*
+ * 		File Name: buzzer.h
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Buzzer Driver Header File
+ */
+
+#ifndef BUZZER_H_
+#define BUZZER_H_
+
+/* user defined data types library */
+#include "../macros/std_types.h"
+
+/* Buzzer Port/Pin ID */
+
+
+#endif /* BUZZER_H_ */

@@ -1,0 +1,31 @@
+/*
+ * 		File Name: buzzer.c
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Buzzer Driver Source File
+ */
+/* used libraries */
+#include "../GPIO/gpio.h"
+#include "buzzer.h"
+
+/*
+ * Initializes the buzzer pin direction and turn off the buzzer
+ */
+void Buzzer_init(void){
+
+}
+
+/*
+ * Activates the buzzer.
+ */
+void Buzzer_on(void){
+
+}
+
+/*
+ * Deactivates the buzzer.
+ */
+void Buzzer_off(void){
+
+}

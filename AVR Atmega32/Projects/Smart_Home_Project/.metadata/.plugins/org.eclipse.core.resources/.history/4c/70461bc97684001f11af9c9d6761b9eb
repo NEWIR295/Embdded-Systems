@@ -1,0 +1,14 @@
+/*
+ * 		File Name: flame.h
+ *
+ *  	Created on: Oct 7, 2024
+ *      Author: Mohamed Newir
+ *      Description: Flame Sensor Driver Header File
+ */
+
+#ifndef FLAME_SENSOR_H_
+#define FLAME_SENSOR_H_
+
+
+
+#endif /* FLAME_SENSOR_H_ */
