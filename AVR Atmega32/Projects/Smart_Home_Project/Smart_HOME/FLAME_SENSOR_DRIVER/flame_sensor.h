@@ -12,7 +12,7 @@
 /* user defined data types library */
 #include "../macros/std_types.h"
 
-#define FIRE_DETECTED 0
+#define FIRE_DETECTED HIGH
 
 /* Flame Sensor Port/Pin ID */
 #define FLAME_SENSOR_PORT_ID PORTD_ID
