@@ -1033,3 +1033,244 @@ Data:        354 bytes (17.3% Full)
 
 Finished building: sizedummy
  
+14:56:15 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../PWM_DRIVER/pwm.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"PWM_DRIVER/pwm.d" -MT"PWM_DRIVER/pwm.o" -c -o "PWM_DRIVER/pwm.o" "../PWM_DRIVER/pwm.c"
+Finished building: ../PWM_DRIVER/pwm.c
+ 
+Building file: ../MOTOR_DRIVER/motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MOTOR_DRIVER/motor.d" -MT"MOTOR_DRIVER/motor.o" -c -o "MOTOR_DRIVER/motor.o" "../MOTOR_DRIVER/motor.c"
+Finished building: ../MOTOR_DRIVER/motor.c
+ 
+Building file: ../LM35_Driver/lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LM35_Driver/lm35.d" -MT"LM35_Driver/lm35.o" -c -o "LM35_Driver/lm35.o" "../LM35_Driver/lm35.c"
+Finished building: ../LM35_Driver/lm35.c
+ 
+Building file: ../LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LED_DRIVER/led.d" -MT"LED_DRIVER/led.o" -c -o "LED_DRIVER/led.o" "../LED_DRIVER/led.c"
+Finished building: ../LED_DRIVER/led.c
+ 
+Building file: ../LDR_SENSOR_DRIVER/ldr_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LDR_SENSOR_DRIVER/ldr_sensor.d" -MT"LDR_SENSOR_DRIVER/ldr_sensor.o" -c -o "LDR_SENSOR_DRIVER/ldr_sensor.o" "../LDR_SENSOR_DRIVER/ldr_sensor.c"
+Finished building: ../LDR_SENSOR_DRIVER/ldr_sensor.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building file: ../FLAME_SENSOR_DRIVER/flame_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"FLAME_SENSOR_DRIVER/flame_sensor.d" -MT"FLAME_SENSOR_DRIVER/flame_sensor.o" -c -o "FLAME_SENSOR_DRIVER/flame_sensor.o" "../FLAME_SENSOR_DRIVER/flame_sensor.c"
+Finished building: ../FLAME_SENSOR_DRIVER/flame_sensor.c
+ 
+Building file: ../BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"BUZZER_DRIVER/buzzer.d" -MT"BUZZER_DRIVER/buzzer.o" -c -o "BUZZER_DRIVER/buzzer.o" "../BUZZER_DRIVER/buzzer.c"
+Finished building: ../BUZZER_DRIVER/buzzer.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10214 bytes (31.2% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:56:45 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../LDR_SENSOR_DRIVER/ldr_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LDR_SENSOR_DRIVER/ldr_sensor.d" -MT"LDR_SENSOR_DRIVER/ldr_sensor.o" -c -o "LDR_SENSOR_DRIVER/ldr_sensor.o" "../LDR_SENSOR_DRIVER/ldr_sensor.c"
+Finished building: ../LDR_SENSOR_DRIVER/ldr_sensor.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10214 bytes (31.2% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:08:35 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../MOTOR_DRIVER/motor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MOTOR_DRIVER/motor.d" -MT"MOTOR_DRIVER/motor.o" -c -o "MOTOR_DRIVER/motor.o" "../MOTOR_DRIVER/motor.c"
+Finished building: ../MOTOR_DRIVER/motor.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:10:44 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:21:56 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LM35_Driver/lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LM35_Driver/lm35.d" -MT"LM35_Driver/lm35.o" -c -o "LM35_Driver/lm35.o" "../LM35_Driver/lm35.c"
+Finished building: ../LM35_Driver/lm35.c
+ 
+Building file: ../LDR_SENSOR_DRIVER/ldr_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LDR_SENSOR_DRIVER/ldr_sensor.d" -MT"LDR_SENSOR_DRIVER/ldr_sensor.o" -c -o "LDR_SENSOR_DRIVER/ldr_sensor.o" "../LDR_SENSOR_DRIVER/ldr_sensor.c"
+Finished building: ../LDR_SENSOR_DRIVER/ldr_sensor.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:22:05 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

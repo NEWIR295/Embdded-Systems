@@ -31,7 +31,7 @@ void DcMotor_Init(void){
  */
 void DcMotor_Rotate(motorState state, uint8 speed){
 
-	uint8 pwm = (uint8) (( (uint32) speed * 255) / 100);
+	uint8 pwm = ((speed/100)*255);
 	switch(state){
 	case CW:
 		GPIO_writePin(MOTOR_DRIVER_PORT_ID,IN1_PIN,HIGH);
