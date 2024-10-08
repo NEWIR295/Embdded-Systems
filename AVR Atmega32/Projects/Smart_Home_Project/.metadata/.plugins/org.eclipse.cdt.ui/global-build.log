@@ -1274,3 +1274,625 @@ Data:        354 bytes (17.3% Full)
 
 Finished building: sizedummy
  
+15:54:48 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../FLAME_SENSOR_DRIVER/flame_sensor.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"FLAME_SENSOR_DRIVER/flame_sensor.d" -MT"FLAME_SENSOR_DRIVER/flame_sensor.o" -c -o "FLAME_SENSOR_DRIVER/flame_sensor.o" "../FLAME_SENSOR_DRIVER/flame_sensor.c"
+Finished building: ../FLAME_SENSOR_DRIVER/flame_sensor.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:38:49 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:39:12 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10266 bytes (31.3% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:44:00 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:44:10 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:46:47 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:46:59 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:52 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:48:55 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:49:16 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:49:22 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:57:21 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:57:30 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+22:59:02 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:04:49 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:06:54 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:134: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:139: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:144: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:152: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:07:00 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:09:34 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:11:36 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:11:38 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:26:15 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:21:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:61: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:66: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:71: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:79: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:167: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:168: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: Smart_HOME.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Smart_HOME.map -mmcu=atmega32 -o "Smart_HOME.elf"  ./src/main.o  ./PWM_DRIVER/pwm.o  ./MOTOR_DRIVER/motor.o  ./LM35_Driver/lm35.o  ./LED_DRIVER/led.o  ./LDR_SENSOR_DRIVER/ldr_sensor.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./FLAME_SENSOR_DRIVER/flame_sensor.o  ./BUZZER_DRIVER/buzzer.o  ./ADC_DRIVER/adc.o   
+Finished building target: Smart_HOME.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Smart_HOME.elf  >"Smart_HOME.lss"
+Finished building: Smart_HOME.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:26:19 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+23:26:21 **** Incremental Build of configuration Debug for project Smart_HOME ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Smart_HOME.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10500 bytes (32.0% Full)
+(.text + .data + .bootloader)
+
+Data:        354 bytes (17.3% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

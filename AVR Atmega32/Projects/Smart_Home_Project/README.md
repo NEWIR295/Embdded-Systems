@@ -98,14 +98,6 @@ The project follows a **modular driver-based structure** where each component ha
 
 ---
 
-## Polling vs Interrupt-Based Detection
-
-Initially, the flame sensor used a **polling approach**, where the system continuously checked the sensor in the main loop. This is suitable for small applications but may lead to slower responses in larger systems. Therefore, an **interrupt-based approach** was used for fire detection to ensure **immediate response** when the flame sensor detects a fire.
-
-- **Interrupt-Based Fire Detection** ensures real-time response by triggering an interrupt when the flame sensor detects a fire, bypassing the need for continuous polling.
-
----
-
 
 
 ## Contributor

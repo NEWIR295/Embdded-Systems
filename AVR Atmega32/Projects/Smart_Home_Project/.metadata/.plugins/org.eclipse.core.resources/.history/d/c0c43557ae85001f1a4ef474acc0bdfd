@@ -53,36 +53,6 @@ int main(void){
 			/* insure that buzzer is deactivated */
 			Buzzer_off();
 
-			/* Show data on the LCD */
-
-			/* Show Fan State*/
-			if(state == CCW || state == CW ){
-
-				LCD_displayStringRowColumn(0,0,"      FAN ON     ");
-
-			}
-			else{
-
-				LCD_displayStringRowColumn(0,0,"      FAN OFF    ");
-
-			}
-
-			/* Show LDR data on LCD */
-			LCD_displayStringRowColumn(1,0,"Temp=   LDR=   %");
-			if(LDR_reading > 99){
-				LCD_moveCursor(1,12);
-				LCD_integerToString(LDR_reading);
-			}
-			else{
-				LCD_moveCursor(1,12);
-				LCD_integerToString(LDR_reading);
-				LCD_displayString(" ");
-			}
-
-			/* Show Temperature data on LCD */
-			LCD_moveCursor(1,5);
-			LCD_integerToString(LM35_reading);
-
 			/* control light using the LDR */
 			if(LDR_reading <= 15){
 
@@ -156,6 +126,36 @@ int main(void){
 				state = STOP;
 			}
 
+			/* Show data on the LCD */
+
+			/* Show Fan State*/
+			if(state == CCW || state == CW ){
+
+				LCD_displayStringRowColumn(0,0,"      FAN ON     ");
+
+			}
+			else{
+
+				LCD_displayStringRowColumn(0,0,"      FAN OFF    ");
+
+			}
+
+			/* Show LDR data on LCD */
+			LCD_displayStringRowColumn(1,0,"Temp=  C LDR=  %");
+			if(LDR_reading > 99){
+				LCD_moveCursor(1,13);
+				LCD_integerToString(LDR_reading);
+			}
+			else{
+				LCD_moveCursor(1,13);
+				LCD_integerToString(LDR_reading);
+				LCD_displayString(" ");
+			}
+
+			/* Show Temperature data on LCD */
+			LCD_moveCursor(1,5);
+			LCD_integerToString(LM35_reading);
+
 		}
 		else{
 
@@ -169,7 +169,7 @@ int main(void){
 
 		}
 
-		_delay_ms(100);
+		_delay_ms(500);
 
 	}
 
