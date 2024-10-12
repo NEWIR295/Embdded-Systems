@@ -1,0 +1,23 @@
+/*
+ * 		File Name: main.c
+ *
+ *  	Created on: Oct 11, 2024
+ *      Author: Mohamed Newir
+ *      Description: Application Source File
+ */
+
+/* System Internal Frequency */
+#define F_CPU 16000000UL
+/* Used Libraries */
+
+/* Main Function */
+int main (void){
+
+	/* Application Initialization */
+
+	while(1){
+		/* Application Code */
+
+	}
+	return 0;
+}

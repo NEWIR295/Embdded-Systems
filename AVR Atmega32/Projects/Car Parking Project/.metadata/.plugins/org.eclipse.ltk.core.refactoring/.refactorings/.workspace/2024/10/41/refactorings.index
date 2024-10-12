@@ -1,0 +1,7 @@
+1728649819776	Delete resource 'Car_Parking_Project/HAL/MOTOR_DRIVER'
+1728649824936	Delete resource 'Car_Parking_Project/HAL/LM35_Driver'
+1728649827841	Delete resource 'Car_Parking_Project/HAL/LDR_SENSOR_DRIVER'
+1728649830090	Delete resource 'Car_Parking_Project/HAL/Keypad_Driver'
+1728649832271	Delete resource 'Car_Parking_Project/HAL/FLAME_SENSOR_DRIVER'
+1728649835841	Delete resource 'Car_Parking_Project/MCAL/ADC_DRIVER'
+1728649837554	Delete resource 'Car_Parking_Project/MCAL/PWM_DRIVER'

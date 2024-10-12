@@ -1,0 +1,16 @@
+/*
+ * 		File Name: us.h
+ *
+ * 		Created on: Oct 11, 2024
+ *      Author: Mohamed Newir
+ *      DEscription: Ultra-sonic Sensor Header file
+ */
+
+#ifndef HAL_US_DRIVER_US_H_
+#define HAL_US_DRIVER_US_H_
+
+/* User defined Data Types */
+#include "../../MCAL/GPIO_Driver/macros/std_types.h"
+
+
+#endif /* HAL_US_DRIVER_US_H_ */

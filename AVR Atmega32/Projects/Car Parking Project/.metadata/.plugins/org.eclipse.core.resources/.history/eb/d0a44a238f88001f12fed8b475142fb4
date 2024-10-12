@@ -1,0 +1,77 @@
+/*
+ * 		File Name: main.c
+ *
+ *  	Created on: Oct 11, 2024
+ *      Author: Mohamed Newir
+ *      Description: Application Source File
+ */
+
+/* System Internal Frequency */
+#define F_CPU 16000000UL
+
+/* Used Libraries */
+#include <util/delay.h>
+#include "../HAL/BUZZER_DRIVER/buzzer.h"
+#include  "../HAL/LCD_DRIVER/lcd.h"
+#include "../HAL/LED_DRIVER/led.h"
+#include "../HAL/US_DRIVER/us.h"
+
+/* Main Function */
+int main (void){
+
+	/* Application Initialization */
+	LCD_init();
+	LEDS_init();
+	Buzzer_init();
+	Ultrasonic_init();
+
+	/* clear screen @ start*/
+	LCD_clearScreen();
+
+	/* local varizbles definitions */
+	uint16 US_distanceReading ;
+
+	while(1){
+
+		/* Application Code */
+		US_distanceReading = Ultrasonic_readDistance();
+
+		if(US_distanceReading <= 5){
+			Buzzer_on();
+			Buzzer_off();
+			LED_on(RED_LED_ID);
+			LED_on(GREEN_LED_ID);
+			LED_on(BLUE_LED_ID);
+			_delay_ms(100);
+			LED_off(RED_LED_ID);
+			LED_off(GREEN_LED_ID);
+			LED_off(BLUE_LED_ID);
+
+		}
+		else if ( (US_distanceReading >= 6) &&  (US_distanceReading <= 10) ){
+			Buzzer_off();
+			LED_on(RED_LED_ID);
+			LED_on(GREEN_LED_ID);
+			LED_on(BLUE_LED_ID);
+		}
+		else if ( (US_distanceReading >= 11) &&  (US_distanceReading <= 15) ){
+			Buzzer_off();
+			LED_on(RED_LED_ID);
+			LED_on(GREEN_LED_ID);
+			LED_off(BLUE_LED_ID);
+		}
+		else if ( (US_distanceReading >= 16) &&  (US_distanceReading <= 20) ){
+			Buzzer_off();
+			LED_on(RED_LED_ID);
+			LED_off(GREEN_LED_ID);
+			LED_off(BLUE_LED_ID);
+		}
+		else if ( US_distanceReading > 20 ){
+			Buzzer_off();
+			LED_off(RED_LED_ID);
+			LED_off(GREEN_LED_ID);
+			LED_off(BLUE_LED_ID);
+		}
+	}
+	return 0;
+}

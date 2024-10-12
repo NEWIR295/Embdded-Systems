@@ -1,0 +1,26 @@
+/*
+ * 		File Name: main.c
+ *
+ *  	Created on: Oct 11, 2024
+ *      Author: Mohamed Newir
+ *      Description: Application Source File
+ */
+
+/* System Internal Frequency */
+#define F_CPU 16000000UL
+/* Used Libraries */
+#include <util/delay.h>
+#include "../HAL/BUZZER_DRIVER/buzzer.h"
+#include  "../HAL/LCD_DRIVER/lcd.h"
+#include
+/* Main Function */
+int main (void){
+
+	/* Application Initialization */
+
+	while(1){
+		/* Application Code */
+
+	}
+	return 0;
+}
