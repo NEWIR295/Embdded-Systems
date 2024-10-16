@@ -1,0 +1,12 @@
+/*
+ * 		File Name: spi.c
+ *
+ *  	Created on: Oct 16, 2024
+ *      Author: Mohamed Newir
+ *      Description: SPI Driver Source File
+ */
+
+/* used libraries */
+#include <avr/io.h>
+#include "../GPIO_Driver/GPIO/gpio.h"
+#include "spi.h"

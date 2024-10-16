@@ -1,0 +1,36 @@
+01:35:39 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:36: warning: unused variable 'count'
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5722 bytes (17.5% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+01:35:42 Build Finished. 0 errors, 1 warnings. (took 3s.53ms)
+

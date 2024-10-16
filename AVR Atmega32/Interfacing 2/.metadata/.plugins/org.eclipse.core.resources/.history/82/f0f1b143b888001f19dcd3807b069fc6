@@ -1,0 +1,21 @@
+/*
+ * 		main.c
+ *
+ * 		Created on: Oct 12, 2024
+ *      Author: Mohamed Newir
+ *      Description:
+ */
+
+/* used Libraries */
+#include "../MCAL/UART_DRIVER/uart.h"
+
+int main(void){
+
+	/* Application Initialization */
+	UART_init(9600);
+	while(1){
+		/* Application Code */
+
+	}
+	return 0;
+}

@@ -1,0 +1,13 @@
+/*
+ * uart.h
+ *
+ *  Created on: Oct 12, 2024
+ *      Author: ma479
+ */
+
+#ifndef MCAL_UART_DRIVER_UART_H_
+#define MCAL_UART_DRIVER_UART_H_
+
+
+
+#endif /* MCAL_UART_DRIVER_UART_H_ */

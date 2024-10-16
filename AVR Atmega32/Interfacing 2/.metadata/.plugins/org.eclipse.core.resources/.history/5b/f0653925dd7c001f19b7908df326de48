@@ -1,0 +1,30 @@
+/*
+ * 		file name: keypad.c
+ *
+ * 	    Created on: Sep 27, 2024
+ *      Author: Mohamed Newir
+ *      Description: source file for keypad driver
+ */
+
+/* GPIO driver LIB */
+#include "../GPIO/gpio.h"
+/* keypad header file */
+#include "keypad.h"
+/* delay lib */
+#include <util/delay.h>
+
+uint8 KEYPAD_getPressedKey(void){
+
+	GPIO_setupPinDirection(KEYPAD_ROW_PORT_ID,KEYPAD_FIRST_ROWS_PIN_ID,PIN_INPUT);
+	GPIO_setupPinDirection(KEYPAD_ROW_PORT_ID,KEYPAD_FIRST_ROWS_PIN_ID+1,PIN_INPUT);
+	GPIO_setupPinDirection(KEYPAD_ROW_PORT_ID,KEYPAD_FIRST_ROWS_PIN_ID+2,PIN_INPUT);
+	GPIO_setupPinDirection(KEYPAD_ROW_PORT_ID,KEYPAD_FIRST_ROWS_PIN_ID+3,PIN_INPUT);
+
+	GPIO_setupPinDirection(KEYPAD_COL_PORT_ID,KEYPAD_FIRST_COL_PIN_ID,PIN_INPUT);
+	GPIO_setupPinDirection(KEYPAD_COL_PORT_ID,KEYPAD_FIRST_COL_PIN_ID+1,PIN_INPUT);
+	GPIO_setupPinDirection(KEYPAD_COL_PORT_ID,KEYPAD_FIRST_COL_PIN_ID+2,PIN_INPUT);
+#if(KEYPAD_COL_NUM == 4)
+	GPIO_setupPinDirection(KEYPAD_COL_PORT_ID,KEYPAD_FIRST_COL_PIN_ID+3,PIN_INPUT);
+#endif
+
+}

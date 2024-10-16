@@ -1,0 +1,4503 @@
+00:36:41 **** Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../Keypad_Driver/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Keypad_Driver/keypad.d" -MT"Keypad_Driver/keypad.o" -c -o "Keypad_Driver/keypad.o" "../Keypad_Driver/keypad.c"
+In file included from ../Keypad_Driver/keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad_Driver/keypad.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building target: KEYPAD_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_EX1.map -mmcu=atmega32 -o "KEYPAD_EX1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_EX1.elf  >"KEYPAD_EX1.lss"
+Finished building: KEYPAD_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5488 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:38:41 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:
+../src/../Keypad_Driver/keypad.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KEYPAD_getPressedKey'
+../src/main.c: In function 'main':
+../src/main.c:13: error: 'uint8' undeclared (first use in this function)
+../src/main.c:13: error: (Each undeclared identifier is reported only once
+../src/main.c:13: error: for each function it appears in.)
+../src/main.c:13: error: expected ';' before 'x'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:40:35 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:
+../src/../Keypad_Driver/keypad.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KEYPAD_getPressedKey'
+../src/main.c: In function 'main':
+../src/main.c:13: error: 'uint8' undeclared (first use in this function)
+../src/main.c:13: error: (Each undeclared identifier is reported only once
+../src/main.c:13: error: for each function it appears in.)
+../src/main.c:13: error: expected ';' before 'x'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:40:52 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:
+../src/../Keypad_Driver/keypad.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KEYPAD_getPressedKey'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:42:32 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:8:
+../src/../Keypad_Driver/keypad.h:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'KEYPAD_getPressedKey'
+../src/main.c: In function 'main':
+../src/main.c:13: error: 'uint8' undeclared (first use in this function)
+../src/main.c:13: error: (Each undeclared identifier is reported only once
+../src/main.c:13: error: for each function it appears in.)
+../src/main.c:13: error: expected ';' before 'key'
+make: *** [src/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+00:44:46 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:13: warning: unused variable 'key'
+Finished building: ../src/main.c
+ 
+Building file: ../Keypad_Driver/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Keypad_Driver/keypad.d" -MT"Keypad_Driver/keypad.o" -c -o "Keypad_Driver/keypad.o" "../Keypad_Driver/keypad.c"
+In file included from ../Keypad_Driver/keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad_Driver/keypad.c
+ 
+Building target: KEYPAD_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_EX1.map -mmcu=atmega32 -o "KEYPAD_EX1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_EX1.elf  >"KEYPAD_EX1.lss"
+Finished building: KEYPAD_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5488 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:44:58 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5488 bytes (16.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:51:17 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_EX1.map -mmcu=atmega32 -o "KEYPAD_EX1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_EX1.elf  >"KEYPAD_EX1.lss"
+Finished building: KEYPAD_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5542 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:51:23 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5542 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:51:25 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5542 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:53:34 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../Keypad_Driver/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Keypad_Driver/keypad.d" -MT"Keypad_Driver/keypad.o" -c -o "Keypad_Driver/keypad.o" "../Keypad_Driver/keypad.c"
+In file included from ../Keypad_Driver/keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad_Driver/keypad.c
+ 
+Building target: KEYPAD_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_EX1.map -mmcu=atmega32 -o "KEYPAD_EX1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_EX1.elf  >"KEYPAD_EX1.lss"
+Finished building: KEYPAD_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5304 bytes (16.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:53:39 **** Incremental Build of configuration Debug for project KEYPAD_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5304 bytes (16.2% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:05:46 **** Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../Keypad_Driver/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Keypad_Driver/keypad.d" -MT"Keypad_Driver/keypad.o" -c -o "Keypad_Driver/keypad.o" "../Keypad_Driver/keypad.c"
+In file included from ../Keypad_Driver/keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad_Driver/keypad.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5372 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:05:52 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5372 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:10:33 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../Keypad_Driver/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Keypad_Driver/keypad.d" -MT"Keypad_Driver/keypad.o" -c -o "Keypad_Driver/keypad.o" "../Keypad_Driver/keypad.c"
+In file included from ../Keypad_Driver/keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad_Driver/keypad.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5372 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:10:38 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5372 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:10:54 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5372 bytes (16.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:20:40 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:21:27 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5508 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:02 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:06 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:22:08 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5514 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:23:44 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5524 bytes (16.9% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:28:46 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5508 bytes (16.8% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:29:28 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../Keypad_Driver/keypad.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Keypad_Driver/keypad.d" -MT"Keypad_Driver/keypad.o" -c -o "Keypad_Driver/keypad.o" "../Keypad_Driver/keypad.c"
+In file included from ../Keypad_Driver/keypad.c:14:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../Keypad_Driver/keypad.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5762 bytes (17.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:29:33 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5762 bytes (17.6% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:31:27 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:31: warning: unused variable 'count'
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5722 bytes (17.5% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:31:32 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5722 bytes (17.5% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+01:35:39 **** Incremental Build of configuration Debug for project KEYPAD_CH1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:36: warning: unused variable 'count'
+Finished building: ../src/main.c
+ 
+Building target: KEYPAD_CH1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,KEYPAD_CH1.map -mmcu=atmega32 -o "KEYPAD_CH1.elf"  ./src/main.o  ./Keypad_Driver/keypad.o  ./GPIO/gpio.o   
+Finished building target: KEYPAD_CH1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S KEYPAD_CH1.elf  >"KEYPAD_CH1.lss"
+Finished building: KEYPAD_CH1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 KEYPAD_CH1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5722 bytes (17.5% Full)
+(.text + .data + .bootloader)
+
+Data:         18 bytes (0.9% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+03:01:21 **** Build of configuration Debug for project LCD ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1818 bytes (11.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:57:38 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+../LCD_DRIVER/lcd.c:21: error: expected ')' before 'command'
+../LCD_DRIVER/lcd.c:28: error: expected ')' before 'character'
+../LCD_DRIVER/lcd.c:35: warning: type defaults to 'int' in declaration of 'uint8'
+../LCD_DRIVER/lcd.c:35: error: expected ';', ',' or ')' before '*' token
+../LCD_DRIVER/lcd.c:43: error: expected ')' before 'row'
+../LCD_DRIVER/lcd.c:50: error: expected ')' before 'row'
+../LCD_DRIVER/lcd.c:57: error: expected ')' before 'data'
+make: *** [LCD_DRIVER/lcd.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:59:03 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1988 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:59:30 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    1988 bytes (12.1% Full)
+(.text + .data + .bootloader)
+
+Data:          0 bytes (0.0% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:14:46 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7112 bytes (43.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:17:20 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7170 bytes (43.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:05:50 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7482 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:06:33 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7482 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:06:34 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7482 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:11:27 **** Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7482 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:11:31 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7482 bytes (22.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:17:30 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:20: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7534 bytes (23.0% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:18:40 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7534 bytes (23.0% Full)
+(.text + .data + .bootloader)
+
+Data:         42 bytes (2.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:22:55 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:17: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:18: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:22: warning: implicit declaration of function '_delay_ms'
+../src/main.c:23: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:25: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:27: warning: overflow in implicit constant conversion
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+./src/main.o: In function `main':
+../src/main.c:22: undefined reference to `_delay_ms'
+make: *** [LCD_EX2.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:23:16 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:18: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:19: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:24: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:28: warning: overflow in implicit constant conversion
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7864 bytes (24.0% Full)
+(.text + .data + .bootloader)
+
+Data:         90 bytes (4.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:23:36 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7864 bytes (24.0% Full)
+(.text + .data + .bootloader)
+
+Data:         90 bytes (4.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:26:10 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:18: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:19: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:28: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:30: warning: overflow in implicit constant conversion
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7864 bytes (24.0% Full)
+(.text + .data + .bootloader)
+
+Data:         90 bytes (4.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:26:13 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7864 bytes (24.0% Full)
+(.text + .data + .bootloader)
+
+Data:         90 bytes (4.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:27:37 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:18: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:19: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:28: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:30: warning: large integer implicitly truncated to unsigned type
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:27:42 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:28:44 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+../LCD_DRIVER/lcd.c:106: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:28:53 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:29:46 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7820 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:29:57 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7820 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:30:30 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:30:33 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:31:04 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:31:07 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:31:37 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:18: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:19: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:28: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:31:40 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:32:12 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:18: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:19: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:28: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+14:32:14 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:59:51 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:9:
+../LCD_DRIVER/lcd.h:44:1: warning: "LCD_TWO_LINES_4_BITS_MODE_INT1" redefined
+../LCD_DRIVER/lcd.h:43:1: warning: this is the location of the previous definition
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7482 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:59:56 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../src/main.c: In function 'main':
+../src/main.c:18: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:19: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../src/main.c:26: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:28: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:10:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:105: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building target: LCD_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD_EX2.map -mmcu=atmega32 -o "LCD_EX2.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD_EX2.elf  >"LCD_EX2.lss"
+Finished building: LCD_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:00:07 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    7482 bytes (45.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:00:09 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:16:55 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:143: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8830 bytes (53.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:17:00 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:    8830 bytes (53.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:19:30 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega16 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: LCD.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,LCD.map -mmcu=atmega16 -o "LCD.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o   
+Finished building target: LCD.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S LCD.elf  >"LCD.lss"
+Finished building: LCD.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10134 bytes (61.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:19:43 **** Incremental Build of configuration Debug for project LCD ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega16 LCD.elf
+AVR Memory Usage
+----------------
+Device: atmega16
+
+Program:   10134 bytes (61.9% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:14:49 **** Build of configuration Debug for project ADC ****
+make all 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [ADC.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:52:06 **** Clean-only build of configuration Debug for project ADC ****
+make clean 
+rm -rf  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o  sizedummy  ADC.lss  ./GPIO/gpio.d  ./ADC_DRIVER/adc.d  ADC.elf
+ 
+12:52:07 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:29: warning: implicit declaration of function 'LCD_intgerToString'
+../src/main.c:35: warning: implicit declaration of function 'LCD_displayCharacter'
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+./src/main.o: In function `main':
+../src/main.c:29: undefined reference to `LCD_intgerToString'
+../src/main.c:33: undefined reference to `LCD_intgerToString'
+../src/main.c:35: undefined reference to `LCD_displayCharacter'
+make: *** [ADC.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:52:50 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+./src/main.o: In function `main':
+../src/main.c:29: undefined reference to `LCD_intgerToString'
+../src/main.c:33: undefined reference to `LCD_intgerToString'
+../src/main.c:35: undefined reference to `LCD_displayCharacter'
+make: *** [ADC.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:54:32 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:03 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:55:11 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:31 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:19: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:58:58 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:01:32 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:01:44 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:03:25 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+../LCD_DRIVER/lcd.c:165: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:03:29 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:07:47 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:07:49 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10334 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:10:56 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:11:04 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:22:33 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:22:36 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:25:23 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10332 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:26:06 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:26:55 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:27:17 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+../LCD_DRIVER/lcd.c:165: warning: passing argument 1 of 'LCD_displayString' from incompatible pointer type
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:27:56 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10354 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:28:36 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+../LCD_DRIVER/lcd.c:165: warning: passing argument 1 of 'LCD_displayString' from incompatible pointer type
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10406 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:29:07 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10426 bytes (31.8% Full)
+(.text + .data + .bootloader)
+
+Data:         28 bytes (1.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:30:49 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10356 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:31:22 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10356 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:34:49 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:20: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:21: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+../LCD_DRIVER/lcd.c:165: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10360 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:35:00 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10360 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:35:17 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building target: ADC.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC.map -mmcu=atmega32 -o "ADC.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC.elf  >"ADC.lss"
+Finished building: ADC.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10360 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:35:33 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10360 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+13:36:02 **** Incremental Build of configuration Debug for project ADC ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10360 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         30 bytes (1.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:12:14 **** Build of configuration Debug for project ADC_EX1 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:9:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../src/main.c: In function 'main':
+../src/main.c:19: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:29: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX1.map -mmcu=atmega32 -o "ADC_EX1.elf"  ./src/main.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX1.elf  >"ADC_EX1.lss"
+Finished building: ADC_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10342 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:12:21 **** Incremental Build of configuration Debug for project ADC_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10342 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:58:14 **** Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:9:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../src/main.c: In function 'main':
+../src/main.c:21: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:32: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../src/main.c
+ 
+Building file: ../LM35_Driver/lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LM35_Driver/lm35.d" -MT"LM35_Driver/lm35.o" -c -o "LM35_Driver/lm35.o" "../LM35_Driver/lm35.c"
+Finished building: ../LM35_Driver/lm35.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO/gpio.d" -MT"GPIO/gpio.o" -c -o "GPIO/gpio.o" "../GPIO/gpio.c"
+Finished building: ../GPIO/gpio.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11502 bytes (35.1% Full)
+(.text + .data + .bootloader)
+
+Data:        276 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+20:58:25 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11502 bytes (35.1% Full)
+(.text + .data + .bootloader)
+
+Data:        276 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:04:53 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:9:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../src/main.c: In function 'main':
+../src/main.c:21: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:32: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../src/main.c
+ 
+Building file: ../LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LCD_DRIVER/lcd.d" -MT"LCD_DRIVER/lcd.o" -c -o "LCD_DRIVER/lcd.o" "../LCD_DRIVER/lcd.c"
+In file included from ../LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../LCD_DRIVER/lcd.c
+ 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8850 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        276 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:05:04 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8850 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        276 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:05:57 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:9:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../src/main.c: In function 'main':
+../src/main.c:21: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:33: warning: passing argument 1 of 'LCD_displayString' makes pointer from integer without a cast
+Finished building: ../src/main.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8850 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        276 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:06:06 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8850 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        276 bytes (13.5% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:08:13 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c:9:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+../src/main.c: In function 'main':
+../src/main.c:21: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:33: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8850 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:08:16 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8850 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:11:46 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../ADC_DRIVER/adc.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"ADC_DRIVER/adc.d" -MT"ADC_DRIVER/adc.o" -c -o "ADC_DRIVER/adc.o" "../ADC_DRIVER/adc.c"
+Finished building: ../ADC_DRIVER/adc.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8848 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:27 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../src/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"src/main.d" -MT"src/main.o" -c -o "src/main.o" "../src/main.c"
+../src/main.c: In function 'main':
+../src/main.c:21: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../src/main.c:33: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+Finished building: ../src/main.c
+ 
+Building file: ../LM35_Driver/lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LM35_Driver/lm35.d" -MT"LM35_Driver/lm35.o" -c -o "LM35_Driver/lm35.o" "../LM35_Driver/lm35.c"
+Finished building: ../LM35_Driver/lm35.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8852 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:15:33 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8852 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:16:15 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../LM35_Driver/lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LM35_Driver/lm35.d" -MT"LM35_Driver/lm35.o" -c -o "LM35_Driver/lm35.o" "../LM35_Driver/lm35.c"
+Finished building: ../LM35_Driver/lm35.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8860 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:17:12 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Building file: ../LM35_Driver/lm35.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"LM35_Driver/lm35.d" -MT"LM35_Driver/lm35.o" -c -o "LM35_Driver/lm35.o" "../LM35_Driver/lm35.c"
+Finished building: ../LM35_Driver/lm35.c
+ 
+Building target: ADC_EX2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,ADC_EX2.map -mmcu=atmega32 -o "ADC_EX2.elf"  ./src/main.o  ./LM35_Driver/lm35.o  ./LCD_DRIVER/lcd.o  ./GPIO/gpio.o  ./ADC_DRIVER/adc.o   
+Finished building target: ADC_EX2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S ADC_EX2.elf  >"ADC_EX2.lss"
+Finished building: ADC_EX2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8854 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:17:15 **** Incremental Build of configuration Debug for project ADC_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    8854 bytes (27.0% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:25:48 **** Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+../MCAL/UART_DRIVER/uart.c: In function 'UART_init':
+../MCAL/UART_DRIVER/uart.c:21: error: called object '0' is not a function
+make: *** [MCAL/UART_DRIVER/uart.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:26:13 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building file: ../MCAL/GPIO_Driver/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/GPIO_Driver/GPIO/gpio.d" -MT"MCAL/GPIO_Driver/GPIO/gpio.o" -c -o "MCAL/GPIO_Driver/GPIO/gpio.o" "../MCAL/GPIO_Driver/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO_Driver/GPIO/gpio.c
+ 
+Building file: ../HAL/LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED_DRIVER/led.d" -MT"HAL/LED_DRIVER/led.o" -c -o "HAL/LED_DRIVER/led.o" "../HAL/LED_DRIVER/led.c"
+Finished building: ../HAL/LED_DRIVER/led.c
+ 
+Building file: ../HAL/LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD_DRIVER/lcd.d" -MT"HAL/LCD_DRIVER/lcd.o" -c -o "HAL/LCD_DRIVER/lcd.o" "../HAL/LCD_DRIVER/lcd.c"
+In file included from ../HAL/LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../HAL/LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../HAL/LCD_DRIVER/lcd.c
+ 
+Building file: ../HAL/BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUZZER_DRIVER/buzzer.d" -MT"HAL/BUZZER_DRIVER/buzzer.o" -c -o "HAL/BUZZER_DRIVER/buzzer.o" "../HAL/BUZZER_DRIVER/buzzer.c"
+Finished building: ../HAL/BUZZER_DRIVER/buzzer.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [UART_EX1.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:06 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+../MCAL/UART_DRIVER/uart.c: In function 'UART_receiveString':
+../MCAL/UART_DRIVER/uart.c:69: error: assignment of read-only location '*(str + (unsigned int)i)'
+../MCAL/UART_DRIVER/uart.c:72: error: assignment of read-only location '*(str + (unsigned int)i)'
+../MCAL/UART_DRIVER/uart.c:74: error: assignment of read-only location '*(str + (unsigned int)i)'
+make: *** [MCAL/UART_DRIVER/uart.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:33:18 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o   
+c:/winavr-20100110/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o:(.init9+0x0): undefined reference to `main'
+make: *** [UART_EX1.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:37:20 **** Clean-only build of configuration Debug for project UART_EX1 ****
+make clean 
+rm -rf  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  sizedummy  UART_EX1.lss  ./MCAL/UART_DRIVER/uart.d  ./MCAL/GPIO_Driver/GPIO/gpio.d  ./HAL/LED_DRIVER/led.d  ./HAL/LCD_DRIVER/lcd.d  ./HAL/BUZZER_DRIVER/buzzer.d  UART_EX1.elf
+ 
+19:37:20 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building file: ../MCAL/GPIO_Driver/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/GPIO_Driver/GPIO/gpio.d" -MT"MCAL/GPIO_Driver/GPIO/gpio.o" -c -o "MCAL/GPIO_Driver/GPIO/gpio.o" "../MCAL/GPIO_Driver/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO_Driver/GPIO/gpio.c
+ 
+Building file: ../HAL/LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED_DRIVER/led.d" -MT"HAL/LED_DRIVER/led.o" -c -o "HAL/LED_DRIVER/led.o" "../HAL/LED_DRIVER/led.c"
+Finished building: ../HAL/LED_DRIVER/led.c
+ 
+Building file: ../HAL/LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD_DRIVER/lcd.d" -MT"HAL/LCD_DRIVER/lcd.o" -c -o "HAL/LCD_DRIVER/lcd.o" "../HAL/LCD_DRIVER/lcd.c"
+In file included from ../HAL/LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../HAL/LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../HAL/LCD_DRIVER/lcd.c
+ 
+Building file: ../HAL/BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUZZER_DRIVER/buzzer.d" -MT"HAL/BUZZER_DRIVER/buzzer.o" -c -o "HAL/BUZZER_DRIVER/buzzer.o" "../HAL/BUZZER_DRIVER/buzzer.c"
+Finished building: ../HAL/BUZZER_DRIVER/buzzer.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10988 bytes (33.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+19:37:31 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10988 bytes (33.5% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:30:02 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11002 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:34:53 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11002 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:41:03 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11002 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:44:48 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11002 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:00:00 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11002 bytes (33.6% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:04:28 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:12:32 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:12:47 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:28:10 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:34:35 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:34:41 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:36:16 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../MCAL/UART_DRIVER/uart.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/UART_DRIVER/uart.d" -MT"MCAL/UART_DRIVER/uart.o" -c -o "MCAL/UART_DRIVER/uart.o" "../MCAL/UART_DRIVER/uart.c"
+Finished building: ../MCAL/UART_DRIVER/uart.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11054 bytes (33.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:38:55 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c: In function 'main':
+../Application/main.c:18: warning: unused variable 'data'
+Finished building: ../Application/main.c
+ 
+Building target: UART_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,UART_EX1.map -mmcu=atmega32 -o "UART_EX1.elf"  ./MCAL/UART_DRIVER/uart.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: UART_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S UART_EX1.elf  >"UART_EX1.lss"
+Finished building: UART_EX1.lss
+ 
+Create Flash image (ihex format)
+avr-objcopy -R .eeprom -R .fuse -R .lock -R .signature -O ihex UART_EX1.elf  "UART_EX1.hex"
+Finished building: UART_EX1.hex
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11068 bytes (33.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+00:38:59 **** Incremental Build of configuration Debug for project UART_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 UART_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   11068 bytes (33.8% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:13:25 **** Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+../MCAL/SPI_DRIVER/spi.c: In function 'SPI_initMaster':
+../MCAL/SPI_DRIVER/spi.c:18: error: too few arguments to function 'GPIO_setupPinDirection'
+../MCAL/SPI_DRIVER/spi.c:19: error: expected ';' before '}' token
+make: *** [MCAL/SPI_DRIVER/spi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:13:43 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building file: ../MCAL/GPIO_Driver/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/GPIO_Driver/GPIO/gpio.d" -MT"MCAL/GPIO_Driver/GPIO/gpio.o" -c -o "MCAL/GPIO_Driver/GPIO/gpio.o" "../MCAL/GPIO_Driver/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO_Driver/GPIO/gpio.c
+ 
+Building file: ../HAL/LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED_DRIVER/led.d" -MT"HAL/LED_DRIVER/led.o" -c -o "HAL/LED_DRIVER/led.o" "../HAL/LED_DRIVER/led.c"
+Finished building: ../HAL/LED_DRIVER/led.c
+ 
+Building file: ../HAL/LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD_DRIVER/lcd.d" -MT"HAL/LCD_DRIVER/lcd.o" -c -o "HAL/LCD_DRIVER/lcd.o" "../HAL/LCD_DRIVER/lcd.c"
+In file included from ../HAL/LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../HAL/LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../HAL/LCD_DRIVER/lcd.c
+ 
+Building file: ../HAL/BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUZZER_DRIVER/buzzer.d" -MT"HAL/BUZZER_DRIVER/buzzer.o" -c -o "HAL/BUZZER_DRIVER/buzzer.o" "../HAL/BUZZER_DRIVER/buzzer.c"
+Finished building: ../HAL/BUZZER_DRIVER/buzzer.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c: In function 'main':
+../Application/main.c:19: warning: unused variable 'str'
+../Application/main.c:18: warning: unused variable 'data'
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10578 bytes (32.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:21:28 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10724 bytes (32.7% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:33:55 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+../MCAL/SPI_DRIVER/spi.c: In function 'SPI_sendReceive':
+../MCAL/SPI_DRIVER/spi.c:84: warning: passing argument 1 of 'SPI_sendReceive' makes pointer from integer without a cast
+../MCAL/SPI_DRIVER/spi.c:84: error: void value not ignored as it ought to be
+make: *** [MCAL/SPI_DRIVER/spi.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:36:12 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+../MCAL/SPI_DRIVER/spi.c: In function 'SPI_sendString':
+../MCAL/SPI_DRIVER/spi.c:70: warning: implicit declaration of function 'SPI_sendReceiveString'
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c: In function 'main':
+../Application/main.c:19: warning: unused variable 'str'
+../Application/main.c:18: warning: unused variable 'data'
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+./MCAL/SPI_DRIVER/spi.o: In function `SPI_initMaster':
+../MCAL/SPI_DRIVER/spi.c:21: undefined reference to `SPI_sendReceiveString'
+make: *** [SPI_EX1.elf] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:36:23 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10902 bytes (33.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:36:47 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10902 bytes (33.3% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+11:59:01 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building file: ../MCAL/GPIO_Driver/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/GPIO_Driver/GPIO/gpio.d" -MT"MCAL/GPIO_Driver/GPIO/gpio.o" -c -o "MCAL/GPIO_Driver/GPIO/gpio.o" "../MCAL/GPIO_Driver/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO_Driver/GPIO/gpio.c
+ 
+Building file: ../HAL/LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LED_DRIVER/led.d" -MT"HAL/LED_DRIVER/led.o" -c -o "HAL/LED_DRIVER/led.o" "../HAL/LED_DRIVER/led.c"
+Finished building: ../HAL/LED_DRIVER/led.c
+ 
+Building file: ../HAL/LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/LCD_DRIVER/lcd.d" -MT"HAL/LCD_DRIVER/lcd.o" -c -o "HAL/LCD_DRIVER/lcd.o" "../HAL/LCD_DRIVER/lcd.c"
+In file included from ../HAL/LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../HAL/LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../HAL/LCD_DRIVER/lcd.c
+ 
+Building file: ../HAL/BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/BUZZER_DRIVER/buzzer.d" -MT"HAL/BUZZER_DRIVER/buzzer.o" -c -o "HAL/BUZZER_DRIVER/buzzer.o" "../HAL/BUZZER_DRIVER/buzzer.c"
+Finished building: ../HAL/BUZZER_DRIVER/buzzer.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c: In function 'main':
+../Application/main.c:31: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../Application/main.c:31: error: (Each undeclared identifier is reported only once
+../Application/main.c:31: error: for each function it appears in.)
+../Application/main.c:39: error: 'LOGIC_LOW' undeclared (first use in this function)
+make: *** [Application/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+11:59:49 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c: In function 'main':
+../Application/main.c:32: error: 'LOGIC_HIGH' undeclared (first use in this function)
+../Application/main.c:32: error: (Each undeclared identifier is reported only once
+../Application/main.c:32: error: for each function it appears in.)
+../Application/main.c:40: error: 'LOGIC_LOW' undeclared (first use in this function)
+make: *** [Application/main.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+12:00:10 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:00:22 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:02:51 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+../Application/main.c:10:1: warning: "F_CPU" redefined
+<command-line>: warning: this is the location of the previous definition
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:03:06 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:04:33 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:07:59 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:08:02 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:10:42 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building file: ../MCAL/GPIO_Driver/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/GPIO_Driver/GPIO/gpio.d" -MT"MCAL/GPIO_Driver/GPIO/gpio.o" -c -o "MCAL/GPIO_Driver/GPIO/gpio.o" "../MCAL/GPIO_Driver/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO_Driver/GPIO/gpio.c
+ 
+Building file: ../HAL/LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/LED_DRIVER/led.d" -MT"HAL/LED_DRIVER/led.o" -c -o "HAL/LED_DRIVER/led.o" "../HAL/LED_DRIVER/led.c"
+Finished building: ../HAL/LED_DRIVER/led.c
+ 
+Building file: ../HAL/LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/LCD_DRIVER/lcd.d" -MT"HAL/LCD_DRIVER/lcd.o" -c -o "HAL/LCD_DRIVER/lcd.o" "../HAL/LCD_DRIVER/lcd.c"
+In file included from ../HAL/LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../HAL/LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../HAL/LCD_DRIVER/lcd.c
+ 
+Building file: ../HAL/BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/BUZZER_DRIVER/buzzer.d" -MT"HAL/BUZZER_DRIVER/buzzer.o" -c -o "HAL/BUZZER_DRIVER/buzzer.o" "../HAL/BUZZER_DRIVER/buzzer.c"
+Finished building: ../HAL/BUZZER_DRIVER/buzzer.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:10:50 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:21:41 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10940 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:21:45 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10940 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:27:32 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10940 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:32:32 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1.map -mmcu=atmega32 -o "SPI_EX1.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1.elf  >"SPI_EX1.lss"
+Finished building: SPI_EX1.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:32:37 **** Clean-only build of configuration Debug for project SPI_EX1_MC2 ****
+make clean 
+rm -rf  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o  sizedummy  SPI_EX1.lss  ./MCAL/SPI_DRIVER/spi.d  ./MCAL/GPIO_Driver/GPIO/gpio.d  ./HAL/LED_DRIVER/led.d  ./HAL/LCD_DRIVER/lcd.d  ./HAL/BUZZER_DRIVER/buzzer.d  ./Application/main.d  SPI_EX1.elf
+ 
+12:32:38 **** Build of configuration Debug for project SPI_EX1_MC2 ****
+make all 
+Building file: ../MCAL/SPI_DRIVER/spi.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/SPI_DRIVER/spi.d" -MT"MCAL/SPI_DRIVER/spi.o" -c -o "MCAL/SPI_DRIVER/spi.o" "../MCAL/SPI_DRIVER/spi.c"
+Finished building: ../MCAL/SPI_DRIVER/spi.c
+ 
+Building file: ../MCAL/GPIO_Driver/GPIO/gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"MCAL/GPIO_Driver/GPIO/gpio.d" -MT"MCAL/GPIO_Driver/GPIO/gpio.o" -c -o "MCAL/GPIO_Driver/GPIO/gpio.o" "../MCAL/GPIO_Driver/GPIO/gpio.c"
+Finished building: ../MCAL/GPIO_Driver/GPIO/gpio.c
+ 
+Building file: ../HAL/LED_DRIVER/led.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/LED_DRIVER/led.d" -MT"HAL/LED_DRIVER/led.o" -c -o "HAL/LED_DRIVER/led.o" "../HAL/LED_DRIVER/led.c"
+Finished building: ../HAL/LED_DRIVER/led.c
+ 
+Building file: ../HAL/LCD_DRIVER/lcd.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/LCD_DRIVER/lcd.d" -MT"HAL/LCD_DRIVER/lcd.o" -c -o "HAL/LCD_DRIVER/lcd.o" "../HAL/LCD_DRIVER/lcd.c"
+In file included from ../HAL/LCD_DRIVER/lcd.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../HAL/LCD_DRIVER/lcd.c: In function 'LCD_integerToString':
+../HAL/LCD_DRIVER/lcd.c:164: warning: implicit declaration of function 'itoa'
+Finished building: ../HAL/LCD_DRIVER/lcd.c
+ 
+Building file: ../HAL/BUZZER_DRIVER/buzzer.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"HAL/BUZZER_DRIVER/buzzer.d" -MT"HAL/BUZZER_DRIVER/buzzer.o" -c -o "HAL/BUZZER_DRIVER/buzzer.o" "../HAL/BUZZER_DRIVER/buzzer.c"
+Finished building: ../HAL/BUZZER_DRIVER/buzzer.c
+ 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+Finished building: ../Application/main.c
+ 
+Building target: SPI_EX1_MC2.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,SPI_EX1_MC2.map -mmcu=atmega32 -o "SPI_EX1_MC2.elf"  ./MCAL/SPI_DRIVER/spi.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: SPI_EX1_MC2.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S SPI_EX1_MC2.elf  >"SPI_EX1_MC2.lss"
+Finished building: SPI_EX1_MC2.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1_MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10952 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:32:59 **** Incremental Build of configuration Debug for project SPI_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10930 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+12:33:01 **** Incremental Build of configuration Debug for project SPI_EX1_MC2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 SPI_EX1_MC2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10952 bytes (33.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

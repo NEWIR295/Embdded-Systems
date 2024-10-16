@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ADC_EX2/LM35_Driver/lm35&apos;" deleteContents="false" description="Delete resource &apos;ADC_EX2/LM35_Driver/lm35&apos;" element1="/ADC_EX2/LM35_Driver/lm35" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1728149165597"/>
+</session>

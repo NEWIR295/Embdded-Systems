@@ -1,0 +1,20 @@
+21:00:09 **** Incremental Build of configuration Debug for project LCD_EX2 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 LCD_EX2.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    7824 bytes (23.9% Full)
+(.text + .data + .bootloader)
+
+Data:         50 bytes (2.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+21:00:10 Build Finished. 0 errors, 0 warnings. (took 854ms)
+

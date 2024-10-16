@@ -1,0 +1,15 @@
+/*
+ * 		File Name: uart.h
+ *
+ *  	Created on: Oct 12, 2024
+ *      Author: Mohamed Newir
+ *      Description: Uart header File
+ */
+
+#ifndef MCAL_UART_DRIVER_UART_H_
+#define MCAL_UART_DRIVER_UART_H_
+
+/* User Defined Data Types */
+#include "../GPIO_Driver/macros/std_types.h"
+
+#endif /* MCAL_UART_DRIVER_UART_H_ */

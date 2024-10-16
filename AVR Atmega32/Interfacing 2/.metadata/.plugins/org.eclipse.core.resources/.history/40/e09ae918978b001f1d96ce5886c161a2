@@ -1,0 +1,52 @@
+/*
+ * 		File Name: spi.c
+ *
+ *  	Created on: Oct 16, 2024
+ *      Author: Mohamed Newir
+ *      Description: SPI Driver Source File
+ */
+
+/* used libraries */
+#include <avr/io.h>
+#include "../GPIO_Driver/GPIO/gpio.h"
+#include "spi.h"
+
+/* SPI master initialization */
+void SPI_initMaster(void){
+
+	/* set spi pin direction */
+	GPIO_setupPinDirection(PORTB_ID,PIN4_ID,PIN_OUTPUT);
+	GPIO_setupPinDirection(PORTB_ID,PIN5_ID,PIN_OUTPUT);
+	GPIO_setupPinDirection(PORTB_ID,PIN6_ID,PIN_INPUT);
+	GPIO_setupPinDirection(PORTB_ID,PIN7_ID,PIN_OUTPUT);
+}
+
+/* SPI slave initialization */
+void SPI_initSlave(void){
+
+}
+
+/*
+ * SPI function send and receive data at the same time
+ */
+uint8 SPI_sendReceiveString(uint8 data){
+
+	return 0;
+
+}
+
+/*
+ * send String to another device using SPI
+ */
+void SPI_sendString(const uint8 *str){
+
+	return;
+}
+
+/*
+ * Receive String from another device using SPI
+ */
+void SPI_sendReceive(uint8 *str){
+
+}
+

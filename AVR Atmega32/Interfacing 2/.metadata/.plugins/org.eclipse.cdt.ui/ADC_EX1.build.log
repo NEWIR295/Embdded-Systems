@@ -1,0 +1,20 @@
+17:12:21 **** Incremental Build of configuration Debug for project ADC_EX1 ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 ADC_EX1.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10342 bytes (31.6% Full)
+(.text + .data + .bootloader)
+
+Data:         24 bytes (1.2% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+17:12:21 Build Finished. 0 errors, 0 warnings. (took 478ms)
+

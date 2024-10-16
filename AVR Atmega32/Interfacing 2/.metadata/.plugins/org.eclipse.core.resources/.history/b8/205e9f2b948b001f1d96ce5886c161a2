@@ -1,0 +1,29 @@
+/*
+ * 		File Name: spi.h
+ *
+ *  	Created on: Oct 16, 2024
+ *      Author: Mohamed Newir
+ *      Description: SPI Driver Header File
+ */
+
+#ifndef MCAL_SPI_DRIVER_SPI_H_
+#define MCAL_SPI_DRIVER_SPI_H_
+
+/* user defined data types*/
+#include "../GPIO_Driver/macros/std_types.h"
+
+/* SPI default value */
+#define SPI_DEFAULT_VALUE 0xFF
+
+/* Function Prototypes */
+
+/* SPI master initialization */
+void SPI_initMaster(void);
+
+/* SPI slave initialization */
+void SPI_initSlave(void);
+
+
+
+
+#endif /* MCAL_SPI_DRIVER_SPI_H_ */
