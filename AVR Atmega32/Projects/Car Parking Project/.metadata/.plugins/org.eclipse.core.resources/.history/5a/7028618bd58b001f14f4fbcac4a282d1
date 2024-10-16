@@ -56,7 +56,8 @@ uint16 Ultrasonic_readDistance(void){
 	/*while(g_edgeCount <2);*/
 
 	/* return distance reading */
-	return g_timeHigh * (1/117.6) +1 ;
+	uint16 distance = g_timeHigh * 0.017;
+	return distance;
 
 }
 
@@ -86,11 +87,11 @@ void Ultrasonic_edgeProcessing(void){
 		/* clear timer */
 		ICU_clearTimerValue();
 
-		/* reset edge count */
-		g_edgeCount = 0;
-
 		/* Detect rising edge for next measurement */
 		ICU_setEdgeDetectionType(RAISING);
+
+		/* reset edge count */
+		g_edgeCount = 0;
 
 	}
 

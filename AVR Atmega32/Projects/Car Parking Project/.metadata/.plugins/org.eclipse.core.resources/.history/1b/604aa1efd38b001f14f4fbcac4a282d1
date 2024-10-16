@@ -53,10 +53,10 @@ uint16 Ultrasonic_readDistance(void){
 	Ultrasonic_Trigger();
 
 	/* to wait until measurement complete and ensure synchronization */
-	/*while(g_edgeCount <2);*/
+	//while(g_edgeCount <2);
 
 	/* return distance reading */
-	return g_timeHigh * (1/117.6) +1 ;
+	return g_timeHigh * 0.017;
 
 }
 

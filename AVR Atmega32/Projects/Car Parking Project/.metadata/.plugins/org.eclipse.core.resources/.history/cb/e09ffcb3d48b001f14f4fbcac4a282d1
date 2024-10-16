@@ -56,7 +56,7 @@ uint16 Ultrasonic_readDistance(void){
 	/*while(g_edgeCount <2);*/
 
 	/* return distance reading */
-	return g_timeHigh * (1/117.6) +1 ;
+	return g_timeHigh * 0.0085;
 
 }
 

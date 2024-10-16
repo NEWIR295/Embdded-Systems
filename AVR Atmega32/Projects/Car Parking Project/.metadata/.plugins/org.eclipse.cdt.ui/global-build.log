@@ -813,3 +813,805 @@ Data:        303 bytes (14.8% Full)
 
 Finished building: sizedummy
  
+21:22:06 **** Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+In file included from ../Application/main.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/main.c: In function 'main':
+../Application/main.c:35: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../Application/main.c:66: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../Application/main.c:71: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../Application/main.c:75: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../Application/main.c:85: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../Application/main.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13644 bytes (41.6% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:22:35 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+In file included from ../Application/main.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/main.c: In function 'main':
+../Application/main.c:35: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../Application/main.c:66: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../Application/main.c:71: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../Application/main.c:75: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../Application/main.c:85: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../Application/main.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13658 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:22:39 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13658 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+21:23:07 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13658 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+17:41:47 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13658 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:31:06 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:31:17 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:33:06 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:11 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:14 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:57 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:34:59 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:36:11 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:36:15 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:38:10 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:38:14 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:38:41 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:38:44 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:43:12 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:43:19 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:44:16 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13664 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:44:18 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13664 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:45:43 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13646 bytes (41.6% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:45:46 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13646 bytes (41.6% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:06 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:08 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13650 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:29 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../HAL/US_DRIVER/us.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"HAL/US_DRIVER/us.d" -MT"HAL/US_DRIVER/us.o" -c -o "HAL/US_DRIVER/us.o" "../HAL/US_DRIVER/us.c"
+In file included from ../HAL/US_DRIVER/us.c:12:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../HAL/US_DRIVER/us.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13670 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:32 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13670 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:46:35 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13670 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:47:41 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13670 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:50:06 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Building file: ../Application/main.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=16000000UL -MMD -MP -MF"Application/main.d" -MT"Application/main.o" -c -o "Application/main.o" "../Application/main.c"
+In file included from ../Application/main.c:13:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+../Application/main.c: In function 'main':
+../Application/main.c:36: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../Application/main.c:68: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../Application/main.c:73: warning: pointer targets in passing argument 1 of 'LCD_displayString' differ in signedness
+../Application/main.c:77: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+../Application/main.c:87: warning: pointer targets in passing argument 3 of 'LCD_displayStringRowColumn' differ in signedness
+Finished building: ../Application/main.c
+ 
+Building target: Car_Parking_Project.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,Car_Parking_Project.map -mmcu=atmega32 -o "Car_Parking_Project.elf"  ./MCAL/ICU_DRIVER/icu.o  ./MCAL/GPIO_Driver/GPIO/gpio.o  ./HAL/US_DRIVER/us.o  ./HAL/LED_DRIVER/led.o  ./HAL/LCD_DRIVER/lcd.o  ./HAL/BUZZER_DRIVER/buzzer.o  ./Application/main.o   
+Finished building target: Car_Parking_Project.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S Car_Parking_Project.elf  >"Car_Parking_Project.lss"
+Finished building: Car_Parking_Project.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13670 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+18:50:08 **** Incremental Build of configuration Debug for project Car_Parking_Project ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Car_Parking_Project.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   13670 bytes (41.7% Full)
+(.text + .data + .bootloader)
+
+Data:        303 bytes (14.8% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 

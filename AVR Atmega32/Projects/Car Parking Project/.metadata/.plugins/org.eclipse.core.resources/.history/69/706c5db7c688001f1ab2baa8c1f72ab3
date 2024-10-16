@@ -15,19 +15,18 @@
 #include  "../HAL/LCD_DRIVER/lcd.h"
 #include "../HAL/LED_DRIVER/led.h"
 #include "../HAL/US_DRIVER/us.h"
-#include "avr/io.h"
+#include <avr/>
 
 /* Main Function */
 int main (void){
 
-	/* Enable Global Interrupt */
-	SREG |= (1<<7);
-
 	/* Application Initialization */
-	Ultrasonic_init();
 	LCD_init();
 	LEDS_init();
 	Buzzer_init();
+	Ultrasonic_init();
+
+	/* Enable Global Interrupt */
 
 
 	/* clear screen @ start*/
@@ -38,7 +37,6 @@ int main (void){
 	/* local variables definitions */
 	uint16 US_distanceReading ;
 	uint16 US_distanceReading_prevState = 0;
-
 	while(1){
 
 		/* Application Code */
