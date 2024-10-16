@@ -9,6 +9,7 @@
 /* used libraries */
 #include <avr/io.h>
 #include "../GPIO_Driver/GPIO/gpio.h"
+#include "../GPIO_Driver/macros/macros.h"
 #include "spi.h"
 
 /* SPI master initialization */
@@ -48,7 +49,7 @@ uint8 SPI_sendReceive(uint8 data){
 	SPDR = data;
 
 	/* wait until data sent successfully */
-	while(bit_is_clear(SPSR,SPIF));
+	while(BIT_IS_CLEAR(SPSR,SPIF));
 
 	/* return data received */
 	return SPDR;
