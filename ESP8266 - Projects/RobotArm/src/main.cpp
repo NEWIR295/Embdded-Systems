@@ -126,7 +126,10 @@ void handleNotFound()
   server.send(404, "text/plain", "Not Found");
 }
 
-/* Generate HTML Web Page */
+/* 
+* Generate HTML Web Page 
+* Allows dynamic servo angles change 
+*/
 String generateHTML() {
   String html = "<!DOCTYPE html><html><head>";
   html += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
