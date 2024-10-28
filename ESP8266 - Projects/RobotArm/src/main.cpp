@@ -1,7 +1,14 @@
+/* used libraries */
 #include <Arduino.h>
-#include <Servo.h>
 #include <ESP8266WiFi.h>
 #include <ESP8266WebServer.h>
+#include <Servo.h>
+
+/* function prototype */
+String generateHTML();
+void handleRoot();
+void handleUpdate();
+void handleNotFound();
 
 /* Wifi  settings */
 /* Put your SSID & Password */
@@ -78,7 +85,7 @@ void handleRoot()
 void handleUpdate()
 {
 
-  /*  Read the servo angles as String then convert it to intger to update servo position */
+  /*  Read the servo angles as String then convert it to integer to update servo position */
   if (server.hasArg("servo1"))
   {
     angle1 = server.arg("servo1").toInt();
@@ -131,6 +138,7 @@ void handleNotFound()
 * Allows dynamic servo angles change 
 */
 String generateHTML() {
+  
   String html = "<!DOCTYPE html><html><head>";
   html += "<meta name='viewport' content='width=device-width, initial-scale=1.0'>";
   html += "<title>4-DOF Robot Arm Control</title>";
