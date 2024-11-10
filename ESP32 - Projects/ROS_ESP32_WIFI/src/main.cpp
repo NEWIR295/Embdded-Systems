@@ -35,8 +35,6 @@ char NEWIR[] = "Yeah, Newir made it over WiFi!";
 static char count_s[20];
 static int count = 0;
 
-void setupWiFi();
-
 void setup()
 {
   setCpuFrequencyMhz(80); /* set ESP32 frequency to 80MHz */
