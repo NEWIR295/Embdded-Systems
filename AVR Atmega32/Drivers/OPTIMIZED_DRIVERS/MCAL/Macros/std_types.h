@@ -36,7 +36,7 @@ typedef unsigned char bool;
 
 /* Logical value declaration */
 typedef enum{
-	LOW = (0u), High = (1u)
+	LOW = (0u), HIGH = (1u)
 }Logical_Value;
 
 /*

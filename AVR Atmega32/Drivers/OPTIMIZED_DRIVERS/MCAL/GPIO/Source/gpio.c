@@ -54,16 +54,16 @@ void GPIO_writePin(uint8 portNum, uint8 pinNum, Logical_Value value){
 	else{
 		switch(portNum){
 		case PORTA_ID:
-			High == value? SET_BIT(PORTA, pinNum) : CLEAR_BIT(PORTA, pinNum);
+			HIGH == value? SET_BIT(PORTA, pinNum) : CLEAR_BIT(PORTA, pinNum);
 			break;
 		case PORTB_ID:
-			High == value? SET_BIT(PORTB, pinNum) : CLEAR_BIT(PORTB, pinNum);
+			HIGH == value? SET_BIT(PORTB, pinNum) : CLEAR_BIT(PORTB, pinNum);
 			break;
 		case PORTC_ID:
-			High == value? SET_BIT(PORTC, pinNum) : CLEAR_BIT(PORTC, pinNum);
+			HIGH == value? SET_BIT(PORTC, pinNum) : CLEAR_BIT(PORTC, pinNum);
 			break;
 		case PORTD_ID:
-			High == value? SET_BIT(PORTD, pinNum) : CLEAR_BIT(PORTD, pinNum);
+			HIGH == value? SET_BIT(PORTD, pinNum) : CLEAR_BIT(PORTD, pinNum);
 			break;
 		}
 	}
@@ -106,16 +106,16 @@ Logical_Value GPIO_readPin(uint8 portNum, uint8 pinNum){
 	else{
 		switch(portNum){
 		case PORTA_ID:
-			return BIT_IS_SET(PINA, pinNum) ? High : LOW;
+			return BIT_IS_SET(PINA, pinNum) ? HIGH : LOW;
 
 		case PORTB_ID:
-			return BIT_IS_SET(PINB, pinNum) ? High : LOW;
+			return BIT_IS_SET(PINB, pinNum) ? HIGH : LOW;
 
 		case PORTC_ID:
-			return BIT_IS_SET(PINC, pinNum) ? High : LOW;
+			return BIT_IS_SET(PINC, pinNum) ? HIGH : LOW;
 
 		case PORTD_ID:
-			return BIT_IS_SET(PIND, pinNum) ? High : LOW;
+			return BIT_IS_SET(PIND, pinNum) ? HIGH : LOW;
 		}
 	}
 	return LOW;

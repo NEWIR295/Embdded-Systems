@@ -9,7 +9,6 @@
 /* GPIO driver for ATmega32 */
 #include "../../../MCAL/GPIO/Include/gpio.h"
 #include "../Include/sevenSegment.h"
-
 /* global array variable hold numbers in case there is no decoder */
 const uint8 g_numbers[10] = {0x7e,0x0c,0xb6,0x9e,0xcc,0xda,0xfa,0x0e,0xfe,0xde};
 
@@ -29,13 +28,13 @@ void SEVEN_SEGMENT_init(const SevenSegment_t* sevenSegment){
 		if(sevenSegment->type == CATHODE){
 
 			/* initialize seven segment with zero*/
-			GPIO_writePort(sevenSegment->portNum, g_numbers[0]);
+			GPIO_writePortMasked(sevenSegment->portNum, g_numbers[0], sevenSegment->mask);
 		}
 		else{
 
 			/* in case it's Anode*/
 			/* initialize seven segment with zero*/
-			GPIO_writePort(sevenSegment->portNum, ~g_numbers[0]);
+			GPIO_writePortMasked(sevenSegment->portNum, ~g_numbers[0], sevenSegment->mask);
 		}
 	}
 }

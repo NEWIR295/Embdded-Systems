@@ -16,7 +16,7 @@ void LED_init(LED_ID led_id){
 #if(CONFIG == POSITIVE_LOGIC)
 	GPIO_writePin(LED_PORT_ID, led_id, LOW);
 #else
-	GPIO_writePin(LED_PORT_ID, led_id, High);
+	GPIO_writePin(LED_PORT_ID, led_id, HIGH);
 #endif
 }
 
@@ -24,7 +24,7 @@ void LED_init(LED_ID led_id){
 void LED_on(LED_ID led_id){
 
 #if(CONFIG == POSITIVE_LOGIC)
-	GPIO_writePin(LED_PORT_ID, led_id, High);
+	GPIO_writePin(LED_PORT_ID, led_id, HIGH);
 #else
 	GPIO_writePin(LED_PORT_ID, led_id, LOW);
 #endif
@@ -36,7 +36,7 @@ void LED_off(LED_ID led_id){
 #if(CONFIG == POSITIVE_LOGIC)
 	GPIO_writePin(LED_PORT_ID, led_id, LOW);
 #else
-	GPIO_writePin(LED_PORT_ID, led_id, High);
+	GPIO_writePin(LED_PORT_ID, led_id, HIGH);
 #endif
 }
 
